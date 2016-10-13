@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 
 // Buscar
-import Buscar from './containers/Buscar/index.jsx';
+import Index from './containers/Index/index';
 
 import NoMatch from './containers/NoMatch'; // 404 o no encontrado
 
@@ -20,8 +20,8 @@ console.log('URL: ', window.location.href);
 ReactDOM.render(
   <Provider store={store}>
   <Router history={history}>
-    <Route path={basename} component={Buscar}></Route>
+    <Route path={basename} component={Index}></Route>
 
-    <Route path="*" component={Buscar}/>
+    <Route path="*" component={Index}/>
   </Router>
 </Provider>, document.getElementById('root'));

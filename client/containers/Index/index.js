@@ -1,9 +1,14 @@
-import React, { Component } from 'react';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
-import IndexComponent from '../../components/Index';
-import * as SemilleroActions from '../../actions/semilleros';
-import * as NoticiasActions from '../../actions/noticia';
+import React, {
+  Component
+} from 'react';
+import {
+  bindActionCreators
+} from 'redux';
+import {
+  connect
+} from 'react-redux';
+import IndexComponent from '../../components/Index.component.jsx';
+import * as BuscarActions from '../../actions/buscar';
 import './style.css';
 
 class Index extends Component {
@@ -12,59 +17,44 @@ class Index extends Component {
     super(props);
 
     this.state = {
-      list_semilleros: [],
-      list_noticias: []
+      list_semilleros: []
     };
   }
 
-
   componentWillMount() {
-    const { actions_semilleros, actions_noticias } = this.props;
+    const {
+      actions_buscar
+    } = this.props;
 
     // Semilleros
-    actions_semilleros.listar().then(() => {
+    actions_buscar.listar().then(() => {
       var l = this.props.semilleros.semillero.toJS();
 
       if (l.data_list_semilleros) {
-        console.log('fetchSemilleros =>', l.data_list_semilleros);
+        console.log('fetchBuscar =>', l.data_list_semilleros);
 
         this.setState({
           list_semilleros: l.data_list_semilleros
         });
       }
     });
-
-    // Noticias
-    actions_noticias.listar().then(() => {
-      var n = this.props.noticias.noticia.toJS();
-
-      if (n.data_list_noticias) {
-        console.log('fetchNoticias =>', n.data_list_noticias);
-
-        this.setState({
-          list_noticias: n.data_list_noticias
-        });
-      }
-    });
   }
 
   render() {
-    return <IndexComponent />;
+    return <IndexComponent / > ;
   }
 }
 
 function mapStateToProps(state) {
   // console.log("==mapStateToProps: ", state);
   return {
-    semilleros: state.semilleros,
-    noticias: state.noticia
+    buscar: state.buscar
   };
 }
 
 function mapDispatchToProps(dispatch) {
   return {
-    actions_semilleros: bindActionCreators(SemilleroActions, dispatch),
-    actions_noticias: bindActionCreators(NoticiasActions, dispatch)
+    actions_buscar: bindActionCreators(BuscarActions, dispatch)
   };
 }
 

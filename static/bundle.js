@@ -24,11 +24,11 @@ webpackJsonp([1],[
 
 	var _index2 = _interopRequireDefault(_index);
 
-	var _NoMatch = __webpack_require__(368);
+	var _NoMatch = __webpack_require__(371);
 
 	var _NoMatch2 = _interopRequireDefault(_NoMatch);
 
-	var _store = __webpack_require__(370);
+	var _store = __webpack_require__(373);
 
 	var _store2 = _interopRequireDefault(_store);
 
@@ -351,11 +351,11 @@ webpackJsonp([1],[
 
 	var _IndexComponent2 = _interopRequireDefault(_IndexComponent);
 
-	var _buscar = __webpack_require__(340);
+	var _buscar = __webpack_require__(343);
 
 	var BuscarActions = _interopRequireWildcard(_buscar);
 
-	__webpack_require__(364);
+	__webpack_require__(367);
 
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -1958,6 +1958,1160 @@ webpackJsonp([1],[
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _getPrototypeOf = __webpack_require__(253);
+
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+	var _classCallCheck2 = __webpack_require__(279);
+
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+	var _createClass2 = __webpack_require__(280);
+
+	var _createClass3 = _interopRequireDefault(_createClass2);
+
+	var _possibleConstructorReturn2 = __webpack_require__(284);
+
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+	var _inherits2 = __webpack_require__(331);
+
+	var _inherits3 = _interopRequireDefault(_inherits2);
+
+	var _react = __webpack_require__(3);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _MenuComponent = __webpack_require__(340);
+
+	var _MenuComponent2 = _interopRequireDefault(_MenuComponent);
+
+	var _PatrocinadoresComponent = __webpack_require__(341);
+
+	var _PatrocinadoresComponent2 = _interopRequireDefault(_PatrocinadoresComponent);
+
+	var _FotosComponent = __webpack_require__(342);
+
+	var _FotosComponent2 = _interopRequireDefault(_FotosComponent);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var IndexComponent = function (_Component) {
+	  (0, _inherits3.default)(IndexComponent, _Component);
+
+	  function IndexComponent() {
+	    (0, _classCallCheck3.default)(this, IndexComponent);
+	    return (0, _possibleConstructorReturn3.default)(this, (IndexComponent.__proto__ || (0, _getPrototypeOf2.default)(IndexComponent)).apply(this, arguments));
+	  }
+
+	  (0, _createClass3.default)(IndexComponent, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'spn_hol' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'spinner' },
+	            _react2.default.createElement('div', { className: 'bounce1' }),
+	            _react2.default.createElement('div', { className: 'bounce2' }),
+	            _react2.default.createElement('div', { className: 'bounce3' })
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          { className: 'header parallax home-parallax page', id: 'HOME' },
+	          _react2.default.createElement('h2', null),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'section_overlay' },
+	            _react2.default.createElement(
+	              'nav',
+	              { className: 'navbar navbar-default navbar-fixed-top', role: 'navigation' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'container' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'navbar-header' },
+	                  _react2.default.createElement(
+	                    'button',
+	                    {
+	                      type: 'button',
+	                      className: 'navbar-toggle collapsed',
+	                      'data-toggle': 'collapse',
+	                      'data-target': '#bs-example-navbar-collapse-1' },
+	                    _react2.default.createElement(
+	                      'span',
+	                      { className: 'sr-only' },
+	                      'Toggle navigation'
+	                    ),
+	                    _react2.default.createElement('span', { className: 'icon-bar' }),
+	                    _react2.default.createElement('span', { className: 'icon-bar' }),
+	                    _react2.default.createElement('span', { className: 'icon-bar' })
+	                  ),
+	                  _react2.default.createElement(
+	                    'a',
+	                    { className: 'navbar-brand', href: '#' },
+	                    _react2.default.createElement('img', { src: 'assets/images/ejercito/logo.png', alt: 'Logo' })
+	                  )
+	                ),
+	                _react2.default.createElement(_MenuComponent2.default, {
+	                  menu_list: [{
+	                    href: '#HOME',
+	                    name: 'INICIO'
+	                  }, {
+	                    href: '#ABOUT',
+	                    name: 'ABOUT'
+	                  }, {
+	                    href: '#FEATURES',
+	                    name: 'FEATURES'
+	                  }, {
+	                    href: '#SCREENS',
+	                    name: 'SCREENS'
+	                  }, {
+	                    href: '#DOWNLOAD',
+	                    name: 'DOWNLOAD'
+	                  }, {
+	                    href: '#CONTACT',
+	                    name: 'CONTACT'
+	                  }] })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'container home-container' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'row' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'col-md-12' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'logo text-center' },
+	                    _react2.default.createElement('img', { width: '125', height: '55', src: 'assets/images/ejercito/logo.png', alt: '' })
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'row' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'col-md-8 col-sm-8' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'home_text' },
+	                    _react2.default.createElement(
+	                      'h1',
+	                      null,
+	                      'Carrera por los Héroes'
+	                    ),
+	                    _react2.default.createElement(
+	                      'p',
+	                      null,
+	                      'La Corporación Matamoros y ANASE se unieron para realizar la Carrera por los Héroes a nivel nacional para apoyar a los héroes de la patria y sus familias.'
+	                    ),
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'download-btn' },
+	                      _react2.default.createElement(
+	                        'a',
+	                        { className: 'btn home-btn wow fadeInLeft', href: '#DOWNLOAD' },
+	                        'Download'
+	                      ),
+	                      _react2.default.createElement(
+	                        'a',
+	                        { className: 'tuor btn wow fadeInRight', href: '#ABOUT' },
+	                        'Take a tour',
+	                        _react2.default.createElement('i', { className: 'fa fa-angle-down' })
+	                      )
+	                    )
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'col-md-3 col-md-offset-1 col-sm-4' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'home-iphone' },
+	                    _react2.default.createElement('img', { src: 'assets/images/ejercito/portada_decor.jpg', alt: '' })
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(_PatrocinadoresComponent2.default, {
+	          patrocinadores_list: [{
+	            title: 'Emerald Energy',
+	            span1: 'Empresa,',
+	            span2: '1996',
+	            image: 'assets/images/patrocinadores/Emerald_Energy_Logo.png',
+	            descr: 'Emerald Energy es una empresa, establecida en 1996 la cual hace parte de la Corporación Sinochem. Desde su constitución se ha dedicado principalmente a la exploración, desarrollo y producción de petróleo. Después de varios años de desarrollo, la empresa ya ha establecido equipos altamente experimentados y profesionales en tecnología y gestión de la exploración de petróleo y producción del mismo.'
+	          }, {
+	            title: 'Azteca Comunicaciones',
+	            span1: 'Empresa,',
+	            span2: '2011',
+	            image: 'assets/images/patrocinadores/azteca.png',
+	            descr: 'Azteca Comunicaciones Colombia, en el año 2011, fue la empresa seleccionada por el gobierno nacional para planear, diseñar, instalar, poner en servicio, administrar, operar y mantener la red de transporte óptico en cerca de 753 municipios y 2000 instituciones públicas, orientado a la expansión de la infraestructura de fibra óptica nacional, dentro del marco del Proyecto Nacional de Fibra Óptica'
+	          }, {
+	            title: 'Satena',
+	            span1: 'Empresa,',
+	            span2: 'Aerolinea',
+	            image: 'assets/images/patrocinadores/satena.png',
+	            descr: 'SATENA es la única aerolínea estatal que tiene la obligación de hacer presencia en aquellas regiones donde por cuestiones geográficas, de orden público y de pobreza, no llega ningún otro operador y es aquí donde precisamente se refleja el Estado en desarrollo y cumplimiento de sus fines y objetivos, cumple una labor de vital importancia en la generación de desarrollo económico y social de las regiones atendidas, integrándolas con los principales centros económicos del país'
+	          }, {
+	            title: 'Postobón',
+	            span1: 'Empresa,',
+	            span2: '1904',
+	            image: 'assets/images/patrocinadores/Postobon.png',
+	            descr: 'Postobón es una compañía de bebidas Colombiana. Es una de las empresas más grandes del país y una de las principales en América del Sur.'
+	          }, {
+	            title: '',
+	            span1: 'Empresa',
+	            span2: '',
+	            image: 'assets/images/patrocinadores/',
+	            descr: ''
+	          }, {
+	            title: '',
+	            span1: 'Empresa',
+	            span2: '',
+	            image: 'assets/images/patrocinadores/',
+	            descr: ''
+	          }] }),
+	        _react2.default.createElement(
+	          'section',
+	          { id: 'FEATURES', className: 'features page' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'container' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'row' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'col-md-10 col-md-offset-1' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'section_title wow fadeIn', 'data-wow-duration': '1s' },
+	                  _react2.default.createElement(
+	                    'h2',
+	                    null,
+	                    'Nuestra Alianza'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'La Corporación Matamoros y ANASE se unieron para realizar la Carrera por los Héroes a nivel nacional para apoyar a los héroes de la patria y sus familias. El objetivo de este evento es entregar una solución de vivienda a las familias, o familiares de los soldados discapacitados o enfermos héroes del Caquetá.'
+	                  )
+	                )
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'feature_inner' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'container' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'row' },
+	                _react2.default.createElement(
+	                  'div',
+	                  {
+	                    className: 'col-md-4 right_no_padding wow fadeInLeft',
+	                    'data-wow-duration': '1s' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'left_single_feature' },
+	                    _react2.default.createElement(
+	                      'div',
+	                      null,
+	                      _react2.default.createElement('span', { className: 'pe-7s-pin' })
+	                    ),
+	                    _react2.default.createElement(
+	                      'h3',
+	                      null,
+	                      'Lugar',
+	                      _react2.default.createElement(
+	                        'span',
+	                        null,
+	                        '/'
+	                      )
+	                    ),
+	                    _react2.default.createElement(
+	                      'p',
+	                      null,
+	                      'Florencia Caquetá'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'left_single_feature' },
+	                    _react2.default.createElement(
+	                      'div',
+	                      null,
+	                      _react2.default.createElement('span', { className: 'pe-7s-date' })
+	                    ),
+	                    _react2.default.createElement(
+	                      'h3',
+	                      null,
+	                      'Fecha y hora',
+	                      _react2.default.createElement(
+	                        'span',
+	                        null,
+	                        '/'
+	                      )
+	                    ),
+	                    _react2.default.createElement(
+	                      'p',
+	                      null,
+	                      'Domingo 6 de noviembre de 2016, 7:30 am.'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'left_single_feature' },
+	                    _react2.default.createElement(
+	                      'div',
+	                      null,
+	                      _react2.default.createElement('span', { className: 'pe-7s-way' })
+	                    ),
+	                    _react2.default.createElement(
+	                      'h3',
+	                      null,
+	                      'Recorrido',
+	                      _react2.default.createElement(
+	                        'span',
+	                        null,
+	                        '/'
+	                      )
+	                    ),
+	                    _react2.default.createElement(
+	                      'p',
+	                      null,
+	                      '7 Km (competitivo)',
+	                      _react2.default.createElement('br', null),
+	                      '3 Km (recreativo)'
+	                    )
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'col-md-4' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'feature_iphone' },
+	                    _react2.default.createElement('img', {
+	                      className: 'wow bounceIn',
+	                      'data-wow-duration': '1s',
+	                      src: 'assets/images/ejercito/deportista-corriendo.jpg',
+	                      alt: '' })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  {
+	                    className: 'col-md-4 left_no_padding wow fadeInRight',
+	                    'data-wow-duration': '1s' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'right_single_feature' },
+	                    _react2.default.createElement(
+	                      'div',
+	                      null,
+	                      _react2.default.createElement('span', { className: 'pe-7s-monitor' })
+	                    ),
+	                    _react2.default.createElement(
+	                      'h3',
+	                      null,
+	                      _react2.default.createElement(
+	                        'span',
+	                        null,
+	                        '/'
+	                      ),
+	                      'Categorías'
+	                    ),
+	                    _react2.default.createElement(
+	                      'p',
+	                      null,
+	                      'Abierta Master Plus Acompañantes'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'right_single_feature' },
+	                    _react2.default.createElement(
+	                      'div',
+	                      null,
+	                      _react2.default.createElement('span', { className: 'pe-7s-cash' })
+	                    ),
+	                    _react2.default.createElement(
+	                      'h3',
+	                      null,
+	                      _react2.default.createElement(
+	                        'span',
+	                        null,
+	                        '/'
+	                      ),
+	                      'Inscripciones'
+	                    ),
+	                    _react2.default.createElement(
+	                      'p',
+	                      null,
+	                      '50.000 pesos'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'right_single_feature' },
+	                    _react2.default.createElement(
+	                      'div',
+	                      null,
+	                      _react2.default.createElement('span', { className: 'pe-7s-gleam' })
+	                    ),
+	                    _react2.default.createElement(
+	                      'h3',
+	                      null,
+	                      _react2.default.createElement(
+	                        'span',
+	                        null,
+	                        '/'
+	                      ),
+	                      'Lanzamiento'
+	                    ),
+	                    _react2.default.createElement(
+	                      'p',
+	                      null,
+	                      '30 de septiembre en el parque San Francisco.'
+	                    )
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'call_to_action' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'container' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'row wow fadeInLeftBig', 'data-wow-duration': '1s' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'col-md-9' },
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et olore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'col-md-3' },
+	                _react2.default.createElement(
+	                  'a',
+	                  { className: 'btn btn-primary btn-action', href: '#', role: 'button' },
+	                  'Download Now'
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(_FotosComponent2.default, {
+	          fotos_list: [{
+	            image: 'assets/images/carrera2015/DSCN3438.JPG',
+	            width: '60',
+	            height: '60'
+	          }, {
+	            image: 'assets/images/carrera2015/DSCN3452.JPG',
+	            width: '60',
+	            height: '60'
+	          }, {
+	            image: 'assets/images/carrera2015/DSCN3452.JPG',
+	            width: '60',
+	            height: '60'
+	          }, {
+	            image: 'assets/images/carrera2015/DSCN3452.JPG',
+	            width: '60',
+	            height: '60'
+	          }, {
+	            image: 'assets/images/carrera2015/DSCN3488.JPG',
+	            width: '60',
+	            height: '60'
+	          }, {
+	            image: 'assets/images/carrera2015/DSCN3499.JPG',
+	            width: '60',
+	            height: '60'
+	          }, {
+	            image: 'assets/images/carrera2015/DSCN3502.JPG',
+	            width: '60',
+	            height: '60'
+	          }, {
+	            image: 'assets/images/carrera2015/DSCN3534.JPG',
+	            width: '60',
+	            height: '60'
+	          }, {
+	            image: 'assets/images/carrera2015/DSCN3534.JPG',
+	            width: '60',
+	            height: '60'
+	          }, {
+	            image: 'assets/images/carrera2015/DSCN3544.JPG',
+	            width: '60',
+	            height: '60'
+	          }, {
+	            image: 'assets/images/carrera2015/DSCN3604.JPG',
+	            width: '60',
+	            height: '60'
+	          }, {
+	            image: 'assets/images/carrera2015/DSCN3605.JPG',
+	            width: '60',
+	            height: '60'
+	          }, {
+	            image: 'assets/images/carrera2015/DSCN3611.JPG',
+	            width: '60',
+	            height: '60'
+	          }, {
+	            image: 'assets/images/carrera2015/DSCN3613.JPG',
+	            width: '60',
+	            height: '60'
+	          }, {
+	            image: 'assets/images/carrera2015/DSCN3623.JPG',
+	            width: '60',
+	            height: '60'
+	          }, {
+	            image: 'assets/images/carrera2015/DSCN3624.JPG',
+	            width: '60',
+	            height: '60'
+	          }, {
+	            image: 'assets/images/carrera2015/DSCN3631.JPG',
+	            width: '60',
+	            height: '60'
+	          }, {
+	            image: 'assets/images/carrera2015/DSCN3635.JPG',
+	            width: '60',
+	            height: '60'
+	          }, {
+	            image: 'assets/images/carrera2015/DSCN3701.JPG',
+	            width: '60',
+	            height: '60'
+	          }, {
+	            image: 'assets/images/carrera2015/DSCN3702.JPG',
+	            width: '60',
+	            height: '60'
+	          }, {
+	            image: 'assets/images/carrera2015/DSCN3708.JPG',
+	            width: '60',
+	            height: '60'
+	          }, {
+	            image: 'assets/images/carrera2015/DSCN3711.JPG',
+	            width: '60',
+	            height: '60'
+	          }, {
+	            image: 'assets/images/carrera2015/DSCN3713.JPG',
+	            width: '60',
+	            height: '60'
+	          }, {
+	            image: 'assets/images/carrera2015/DSCN3718.JPG',
+	            width: '60',
+	            height: '60'
+	          }, {
+	            image: 'assets/images/carrera2015/DSCN3724.JPG',
+	            width: '60',
+	            height: '60'
+	          }, {
+	            image: 'assets/images/carrera2015/DSCN3726.JPG',
+	            width: '60',
+	            height: '60'
+	          }] }),
+	        _react2.default.createElement(
+	          'section',
+	          { className: 'fun_facts parallax' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'section_overlay' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'container wow bounceInLeft', 'data-wow-duration': '1s' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'row text-center' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'col-md-3' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'single_fun_facts' },
+	                    _react2.default.createElement('i', { className: 'pe-7s-users' }),
+	                    _react2.default.createElement(
+	                      'h2',
+	                      null,
+	                      _react2.default.createElement(
+	                        'span',
+	                        { className: 'counter_num' },
+	                        '1000'
+	                      ),
+	                      _react2.default.createElement(
+	                        'span',
+	                        null,
+	                        '+'
+	                      )
+	                    ),
+	                    _react2.default.createElement(
+	                      'p',
+	                      null,
+	                      'Participantes'
+	                    )
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'col-md-3' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'single_fun_facts' },
+	                    _react2.default.createElement('i', { className: 'pe-7s-star' }),
+	                    _react2.default.createElement(
+	                      'h2',
+	                      null,
+	                      _react2.default.createElement(
+	                        'span',
+	                        { className: 'counter_num' },
+	                        '7'
+	                      ),
+	                      _react2.default.createElement(
+	                        'span',
+	                        null,
+	                        '+'
+	                      )
+	                    ),
+	                    _react2.default.createElement(
+	                      'p',
+	                      null,
+	                      'Kilometros, competitivo'
+	                    )
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'col-md-3' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'single_fun_facts' },
+	                    _react2.default.createElement('i', { className: 'pe-7s-up-arrow' }),
+	                    _react2.default.createElement(
+	                      'h2',
+	                      null,
+	                      _react2.default.createElement(
+	                        'span',
+	                        { className: 'counter_num' },
+	                        '3'
+	                      ),
+	                      _react2.default.createElement(
+	                        'span',
+	                        null,
+	                        '+'
+	                      )
+	                    ),
+	                    _react2.default.createElement(
+	                      'p',
+	                      null,
+	                      'Kilometros, recreativo'
+	                    )
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'col-md-3' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'single_fun_facts' },
+	                    _react2.default.createElement('i', { className: 'pe-7s-date' }),
+	                    _react2.default.createElement(
+	                      'h2',
+	                      null,
+	                      _react2.default.createElement(
+	                        'span',
+	                        { className: 'counter_num' },
+	                        '6'
+	                      ),
+	                      _react2.default.createElement(
+	                        'span',
+	                        null,
+	                        '+'
+	                      )
+	                    ),
+	                    _react2.default.createElement(
+	                      'p',
+	                      null,
+	                      'Noviembre'
+	                    )
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          { className: 'download page', id: 'DOWNLOAD' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'container' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'row' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'col-md-10 col-md-offset-1' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'section_title' },
+	                  _react2.default.createElement(
+	                    'h2',
+	                    null,
+	                    'download now'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.'
+	                  )
+	                )
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'container' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'row' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'col-md-8 col-md-offset-2' },
+	                _react2.default.createElement(
+	                  'div',
+	                  {
+	                    className: 'download_screen text-center wow fadeInUp',
+	                    'data-wow-duration': '1s' },
+	                  _react2.default.createElement('img', { src: 'assets/images/download_screen.png', alt: '' })
+	                )
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'available_store' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'container  wow bounceInRight', 'data-wow-duration': '1s' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'col-md-6' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'available_title' },
+	                  _react2.default.createElement(
+	                    'h2',
+	                    null,
+	                    'Available on'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'col-md-6' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'row' },
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: '' },
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'col-md-4 no_padding' },
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'single_store' },
+	                        _react2.default.createElement('i', { className: 'fa fa-apple' }),
+	                        _react2.default.createElement(
+	                          'div',
+	                          { className: 'store_inner' },
+	                          _react2.default.createElement(
+	                            'h2',
+	                            null,
+	                            'iOS'
+	                          )
+	                        )
+	                      )
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'col-md-4 no_padding' },
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '' },
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'single_store' },
+	                        _react2.default.createElement('i', { className: 'fa fa-android' }),
+	                        _react2.default.createElement(
+	                          'div',
+	                          { className: 'store_inner' },
+	                          _react2.default.createElement(
+	                            'h2',
+	                            null,
+	                            'ANDROID'
+	                          )
+	                        )
+	                      )
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'col-md-4 no_padding' },
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '' },
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'single_store last' },
+	                        _react2.default.createElement('i', { className: 'fa fa-windows' }),
+	                        _react2.default.createElement(
+	                          'div',
+	                          { className: 'store_inner' },
+	                          _react2.default.createElement(
+	                            'h2',
+	                            null,
+	                            'WINDOWS'
+	                          )
+	                        )
+	                      )
+	                    )
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          { className: 'contact page', id: 'CONTACT' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'section_overlay' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'container' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'col-md-10 col-md-offset-1 wow bounceIn' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'section_title' },
+	                  _react2.default.createElement(
+	                    'h2',
+	                    null,
+	                    'Get in touch'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.'
+	                  )
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'contact_form wow bounceIn' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'container' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'form_error text-center' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'name_error hide error' },
+	                    'Please Enter your name'
+	                  ),
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'email_error hide error' },
+	                    'Please Enter your Email'
+	                  ),
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'email_val_error hide error' },
+	                    'Please Enter a Valid Email Address'
+	                  ),
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'message_error hide error' },
+	                    'Please Enter Your Message'
+	                  )
+	                ),
+	                _react2.default.createElement('div', { className: 'Sucess' }),
+	                _react2.default.createElement(
+	                  'form',
+	                  { role: 'form' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'row' },
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'col-md-4' },
+	                      _react2.default.createElement('input', { type: 'text', className: 'form-control', id: 'name', placeholder: 'Name' }),
+	                      _react2.default.createElement('input', { type: 'email', className: 'form-control', id: 'email', placeholder: 'Email' }),
+	                      _react2.default.createElement('input', { type: 'text', className: 'form-control', id: 'subject', placeholder: 'Subject' })
+	                    ),
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'col-md-8' },
+	                      _react2.default.createElement('textarea', {
+	                        className: 'form-control',
+	                        id: 'message',
+	                        rows: '25',
+	                        cols: '10',
+	                        placeholder: '  Message Texts...' }),
+	                      _react2.default.createElement(
+	                        'button',
+	                        { type: 'button', className: 'btn btn-default submit-btn form_submit' },
+	                        'SEND MESSAGE'
+	                      )
+	                    )
+	                  )
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'container' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'row' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'col-md-12 wow bounceInLeft' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'social_icons' },
+	                    _react2.default.createElement(
+	                      'ul',
+	                      null,
+	                      _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        _react2.default.createElement(
+	                          'a',
+	                          { href: '' },
+	                          _react2.default.createElement('i', { className: 'fa fa-facebook' })
+	                        )
+	                      ),
+	                      _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        _react2.default.createElement(
+	                          'a',
+	                          { href: '' },
+	                          _react2.default.createElement('i', { className: 'fa fa-twitter' })
+	                        )
+	                      ),
+	                      _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        _react2.default.createElement(
+	                          'a',
+	                          { href: '' },
+	                          _react2.default.createElement('i', { className: 'fa fa-dribbble' })
+	                        )
+	                      ),
+	                      _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        _react2.default.createElement(
+	                          'a',
+	                          { href: '' },
+	                          _react2.default.createElement('i', { className: 'fa fa-behance' })
+	                        )
+	                      ),
+	                      _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        _react2.default.createElement(
+	                          'a',
+	                          { href: '' },
+	                          _react2.default.createElement('i', { className: 'fa fa-youtube-play' })
+	                        )
+	                      )
+	                    )
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          {
+	            className: 'subscribe parallax subscribe-parallax',
+	            'data-stellar-background-ratio': '0.6',
+	            'data-stellar-vertical-offset': '20' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'section_overlay wow lightSpeedIn' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'container' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'row' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'col-md-10 col-md-offset-1' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'section_title' },
+	                    _react2.default.createElement(
+	                      'h2',
+	                      null,
+	                      'SUBSCRIBE US'
+	                    ),
+	                    _react2.default.createElement(
+	                      'p',
+	                      null,
+	                      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.'
+	                    )
+	                  )
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'container' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'row  wow lightSpeedIn' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'col-md-6 col-md-offset-3' },
+	                  _react2.default.createElement('div', { className: 'subscription-success' }),
+	                  _react2.default.createElement('div', { className: 'subscription-error' }),
+	                  _react2.default.createElement(
+	                    'form',
+	                    { id: 'mc-form', className: 'subscribe_form' },
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'form-group' },
+	                      _react2.default.createElement('input', {
+	                        type: 'email',
+	                        value: '',
+	                        name: 'EMAIL',
+	                        className: 'required email form-control',
+	                        id: 'mce-EMAIL',
+	                        placeholder: 'Enter Email Address' })
+	                    ),
+	                    _react2.default.createElement(
+	                      'button',
+	                      { type: 'submit', className: 'btn btn-default subs-btn' },
+	                      'Submit'
+	                    )
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          { className: 'copyright' },
+	          _react2.default.createElement('h2', null),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'container' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'row' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'col-md-6' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'copy_right_text' },
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Copyright © 2016. All Rights Reserved.'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'A theme by',
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: 'https://dcrazed.com/' },
+	                      'Dcrazed'
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'col-md-6' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'scroll_top' },
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: '#HOME' },
+	                    _react2.default.createElement('i', { className: 'fa fa-angle-up' })
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	  return IndexComponent;
+	}(_react.Component);
+
+	IndexComponent.propTypes = {};
+
+	exports.default = IndexComponent;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "Index.component.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 340 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
 	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
@@ -1990,235 +3144,145 @@ webpackJsonp([1],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var IndexComponent = function (_Component) {
-	  (0, _inherits3.default)(IndexComponent, _Component);
+	var Menu = function (_Component) {
+	  (0, _inherits3.default)(Menu, _Component);
 
-	  function IndexComponent() {
-	    (0, _classCallCheck3.default)(this, IndexComponent);
-	    return (0, _possibleConstructorReturn3.default)(this, (IndexComponent.__proto__ || (0, _getPrototypeOf2.default)(IndexComponent)).apply(this, arguments));
+	  function Menu() {
+	    (0, _classCallCheck3.default)(this, Menu);
+	    return (0, _possibleConstructorReturn3.default)(this, (Menu.__proto__ || (0, _getPrototypeOf2.default)(Menu)).apply(this, arguments));
 	  }
 
-	  (0, _createClass3.default)(IndexComponent, [{
+	  (0, _createClass3.default)(Menu, [{
 	    key: "render",
 	    value: function render() {
+	      var menu_list = this.props.menu_list;
+
+
 	      return _react2.default.createElement(
 	        "div",
-	        null,
+	        { className: "collapse navbar-collapse", id: "bs-example-navbar-collapse-1" },
+	        _react2.default.createElement(
+	          "ul",
+	          { className: "nav navbar-nav navbar-right" },
+	          menu_list.map(function (item, i) {
+	            return _react2.default.createElement(
+	              "li",
+	              { key: i },
+	              _react2.default.createElement(
+	                "a",
+	                { href: item.href },
+	                item.name
+	              )
+	            );
+	          })
+	        )
+	      );
+	    }
+	  }]);
+	  return Menu;
+	}(_react.Component);
+
+	Menu.propTypes = {
+	  menu_list: _react.PropTypes.array.isRequired
+	};
+
+	exports.default = Menu;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "Menu.component.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 341 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _getPrototypeOf = __webpack_require__(253);
+
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+	var _classCallCheck2 = __webpack_require__(279);
+
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+	var _createClass2 = __webpack_require__(280);
+
+	var _createClass3 = _interopRequireDefault(_createClass2);
+
+	var _possibleConstructorReturn2 = __webpack_require__(284);
+
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+	var _inherits2 = __webpack_require__(331);
+
+	var _inherits3 = _interopRequireDefault(_inherits2);
+
+	var _react = __webpack_require__(3);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Patrocinadores = function (_Component) {
+	  (0, _inherits3.default)(Patrocinadores, _Component);
+
+	  function Patrocinadores() {
+	    (0, _classCallCheck3.default)(this, Patrocinadores);
+	    return (0, _possibleConstructorReturn3.default)(this, (Patrocinadores.__proto__ || (0, _getPrototypeOf2.default)(Patrocinadores)).apply(this, arguments));
+	  }
+
+	  (0, _createClass3.default)(Patrocinadores, [{
+	    key: "render",
+	    value: function render() {
+	      var patrocinadores_list = this.props.patrocinadores_list;
+
+
+	      var l = (patrocinadores_list || []).length;
+
+	      return _react2.default.createElement(
+	        "section",
+	        { id: "TESTIMONIAL", className: "testimonial parallax" },
 	        _react2.default.createElement(
 	          "div",
-	          { className: "spn_hol" },
+	          { className: "section_overlay" },
 	          _react2.default.createElement(
 	            "div",
-	            { className: "spinner" },
-	            _react2.default.createElement("div", { className: "bounce1" }),
-	            _react2.default.createElement("div", { className: "bounce2" }),
-	            _react2.default.createElement("div", { className: "bounce3" })
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "section",
-	          { className: "header parallax home-parallax page", id: "HOME" },
-	          _react2.default.createElement("h2", null),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "section_overlay" },
-	            _react2.default.createElement(
-	              "nav",
-	              { className: "navbar navbar-default navbar-fixed-top", role: "navigation" },
-	              _react2.default.createElement(
-	                "div",
-	                { className: "container" },
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "navbar-header" },
-	                  _react2.default.createElement(
-	                    "button",
-	                    {
-	                      type: "button",
-	                      className: "navbar-toggle collapsed",
-	                      "data-toggle": "collapse",
-	                      "data-target": "#bs-example-navbar-collapse-1" },
-	                    _react2.default.createElement(
-	                      "span",
-	                      { className: "sr-only" },
-	                      "Toggle navigation"
-	                    ),
-	                    _react2.default.createElement("span", { className: "icon-bar" }),
-	                    _react2.default.createElement("span", { className: "icon-bar" }),
-	                    _react2.default.createElement("span", { className: "icon-bar" })
-	                  ),
-	                  _react2.default.createElement(
-	                    "a",
-	                    { className: "navbar-brand", href: "#" },
-	                    _react2.default.createElement("img", { src: "assets/images/logo.png", alt: "Logo" })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "collapse navbar-collapse", id: "bs-example-navbar-collapse-1" },
-	                  _react2.default.createElement(
-	                    "ul",
-	                    { className: "nav navbar-nav navbar-right" },
-	                    _react2.default.createElement(
-	                      "li",
-	                      null,
-	                      _react2.default.createElement(
-	                        "a",
-	                        { href: "#HOME" },
-	                        "HOME"
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "li",
-	                      null,
-	                      _react2.default.createElement(
-	                        "a",
-	                        { href: "#ABOUT" },
-	                        "ABOUT"
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "li",
-	                      null,
-	                      _react2.default.createElement(
-	                        "a",
-	                        { href: "#FEATURES" },
-	                        "FEATURES"
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "li",
-	                      null,
-	                      _react2.default.createElement(
-	                        "a",
-	                        { href: "#SCREENS" },
-	                        "SCREENS"
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "li",
-	                      null,
-	                      _react2.default.createElement(
-	                        "a",
-	                        { href: "#DOWNLOAD" },
-	                        "DOWNLOAD"
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "li",
-	                      null,
-	                      _react2.default.createElement(
-	                        "a",
-	                        { href: "#CONTACT" },
-	                        "CONTACT"
-	                      )
-	                    )
-	                  )
-	                )
-	              )
-	            ),
+	            { className: "container" },
 	            _react2.default.createElement(
 	              "div",
-	              { className: "container home-container" },
+	              { className: "row" },
 	              _react2.default.createElement(
 	                "div",
-	                { className: "row" },
+	                { className: "col-md-12 wow bounceInDown" },
 	                _react2.default.createElement(
 	                  "div",
-	                  { className: "col-md-12" },
+	                  {
+	                    id: "carousel-example-caption-testimonial",
+	                    className: "carousel slide",
+	                    "data-ride": "carousel" },
 	                  _react2.default.createElement(
-	                    "div",
-	                    { className: "logo text-center" },
-	                    _react2.default.createElement("img", { width: "125", height: "55", src: "assets/images/logo.png", alt: "" })
-	                  )
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "div",
-	                { className: "row" },
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "col-md-8 col-sm-8" },
-	                  _react2.default.createElement(
-	                    "div",
-	                    { className: "home_text" },
-	                    _react2.default.createElement(
-	                      "h1",
-	                      null,
-	                      "Brilliant Landing Page Design. Executed for Your App"
-	                    ),
-	                    _react2.default.createElement(
-	                      "p",
-	                      null,
-	                      "Now create a beautiful, app landing page."
-	                    ),
-	                    _react2.default.createElement(
-	                      "div",
-	                      { className: "download-btn" },
-	                      _react2.default.createElement(
-	                        "a",
-	                        { className: "btn home-btn wow fadeInLeft", href: "#DOWNLOAD" },
-	                        "Download"
-	                      ),
-	                      _react2.default.createElement(
-	                        "a",
-	                        { className: "tuor btn wow fadeInRight", href: "#ABOUT" },
-	                        "Take a tour",
-	                        _react2.default.createElement("i", { className: "fa fa-angle-down" })
-	                      )
-	                    )
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "col-md-3 col-md-offset-1 col-sm-4" },
-	                  _react2.default.createElement(
-	                    "div",
-	                    { className: "home-iphone" },
-	                    _react2.default.createElement("img", { src: "assets/images/iPhone_Home.png", alt: "" })
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "section",
-	          { id: "TESTIMONIAL", className: "testimonial parallax" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "section_overlay" },
-	            _react2.default.createElement(
-	              "div",
-	              { className: "container" },
-	              _react2.default.createElement(
-	                "div",
-	                { className: "row" },
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "col-md-12 wow bounceInDown" },
-	                  _react2.default.createElement(
-	                    "div",
-	                    {
-	                      id: "carousel-example-caption-testimonial",
-	                      className: "carousel slide",
-	                      "data-ride": "carousel" },
-	                    _react2.default.createElement(
-	                      "ol",
-	                      { className: "carousel-indicators" },
-	                      _react2.default.createElement("li", {
+	                    "ol",
+	                    { className: "carousel-indicators" },
+	                    patrocinadores_list.map(function (item, i) {
+	                      return _react2.default.createElement("li", {
+	                        key: i,
 	                        "data-target": "#carousel-example-caption-testimonial",
-	                        "data-slide-to": "0",
-	                        className: "active" }),
-	                      _react2.default.createElement("li", { "data-target": "#carousel-example-caption-testimonial", "data-slide-to": "1" }),
-	                      _react2.default.createElement("li", { "data-target": "#carousel-example-caption-testimonial", "data-slide-to": "2" })
-	                    ),
-	                    _react2.default.createElement(
-	                      "div",
-	                      { className: "carousel-inner" },
-	                      _react2.default.createElement(
+	                        "data-slide-to": i,
+	                        className: i == 0 ? "active" : "" });
+	                    })
+	                  ),
+	                  _react2.default.createElement(
+	                    "div",
+	                    { className: "carousel-inner" },
+	                    patrocinadores_list.map(function (item, i) {
+	                      return _react2.default.createElement(
 	                        "div",
-	                        { className: "item active" },
+	                        { className: i == 0 ? "item active" : "item", key: i },
 	                        _react2.default.createElement(
 	                          "div",
 	                          { className: "container" },
@@ -2228,14 +3292,15 @@ webpackJsonp([1],[
 	                            _react2.default.createElement(
 	                              "div",
 	                              { className: "col-md-12 text-center" },
-	                              _react2.default.createElement("img", { src: "assets/images/client_1.png", alt: "" }),
+	                              _react2.default.createElement("img", { src: item.image, alt: "" }),
 	                              _react2.default.createElement(
 	                                "div",
 	                                { className: "testimonial_caption" },
 	                                _react2.default.createElement(
 	                                  "h2",
 	                                  null,
-	                                  "Dan Harmon"
+	                                  item.title,
+	                                  ","
 	                                ),
 	                                _react2.default.createElement(
 	                                  "h4",
@@ -2243,995 +3308,21 @@ webpackJsonp([1],[
 	                                  _react2.default.createElement(
 	                                    "span",
 	                                    null,
-	                                    "SR. UI Designer,"
+	                                    item.span1
 	                                  ),
-	                                  "Dcrazed"
+	                                  item.span2
 	                                ),
 	                                _react2.default.createElement(
 	                                  "p",
 	                                  null,
-	                                  "“Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”"
+	                                  item.descr
 	                                )
 	                              )
 	                            )
 	                          )
 	                        )
-	                      ),
-	                      _react2.default.createElement(
-	                        "div",
-	                        { className: "item" },
-	                        _react2.default.createElement(
-	                          "div",
-	                          { className: "container" },
-	                          _react2.default.createElement(
-	                            "div",
-	                            { className: "row" },
-	                            _react2.default.createElement(
-	                              "div",
-	                              { className: "col-md-12 text-center" },
-	                              _react2.default.createElement("img", { src: "assets/images/client_2.png", alt: "" }),
-	                              _react2.default.createElement(
-	                                "div",
-	                                { className: "testimonial_caption" },
-	                                _react2.default.createElement(
-	                                  "h2",
-	                                  null,
-	                                  "Allie Kingsley"
-	                                ),
-	                                _react2.default.createElement(
-	                                  "h4",
-	                                  null,
-	                                  _react2.default.createElement(
-	                                    "span",
-	                                    null,
-	                                    "SR. Content Strategist,"
-	                                  ),
-	                                  "Designscrazed"
-	                                ),
-	                                _react2.default.createElement(
-	                                  "p",
-	                                  null,
-	                                  "“Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”"
-	                                )
-	                              )
-	                            )
-	                          )
-	                        )
-	                      ),
-	                      _react2.default.createElement(
-	                        "div",
-	                        { className: "item" },
-	                        _react2.default.createElement(
-	                          "div",
-	                          { className: "container" },
-	                          _react2.default.createElement(
-	                            "div",
-	                            { className: "row" },
-	                            _react2.default.createElement(
-	                              "div",
-	                              { className: "col-md-12 text-center" },
-	                              _react2.default.createElement("img", { src: "assets/images/client_3.png", alt: "" }),
-	                              _react2.default.createElement(
-	                                "div",
-	                                { className: "testimonial_caption" },
-	                                _react2.default.createElement(
-	                                  "h2",
-	                                  null,
-	                                  "Joel Mchale"
-	                                ),
-	                                _react2.default.createElement(
-	                                  "h4",
-	                                  null,
-	                                  _react2.default.createElement(
-	                                    "span",
-	                                    null,
-	                                    "SR. Developer,"
-	                                  ),
-	                                  "Treehouse"
-	                                ),
-	                                _react2.default.createElement(
-	                                  "p",
-	                                  null,
-	                                  "“Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”"
-	                                )
-	                              )
-	                            )
-	                          )
-	                        )
-	                      )
-	                    )
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "section",
-	          { id: "FEATURES", className: "features page" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "container" },
-	            _react2.default.createElement(
-	              "div",
-	              { className: "row" },
-	              _react2.default.createElement(
-	                "div",
-	                { className: "col-md-10 col-md-offset-1" },
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "section_title wow fadeIn", "data-wow-duration": "1s" },
-	                  _react2.default.createElement(
-	                    "h2",
-	                    null,
-	                    "Features"
-	                  ),
-	                  _react2.default.createElement(
-	                    "p",
-	                    null,
-	                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
-	                  )
-	                )
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "feature_inner" },
-	            _react2.default.createElement(
-	              "div",
-	              { className: "container" },
-	              _react2.default.createElement(
-	                "div",
-	                { className: "row" },
-	                _react2.default.createElement(
-	                  "div",
-	                  {
-	                    className: "col-md-4 right_no_padding wow fadeInLeft",
-	                    "data-wow-duration": "1s" },
-	                  _react2.default.createElement(
-	                    "div",
-	                    { className: "left_single_feature" },
-	                    _react2.default.createElement(
-	                      "div",
-	                      null,
-	                      _react2.default.createElement("span", { className: "pe-7s-like" })
-	                    ),
-	                    _react2.default.createElement(
-	                      "h3",
-	                      null,
-	                      "Creative Design",
-	                      _react2.default.createElement(
-	                        "span",
-	                        null,
-	                        "/"
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "p",
-	                      null,
-	                      "Lorem ipsum dolor, consectetur sed do adipisicing elit, sed do eiusmod tempor incididunt"
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    "div",
-	                    { className: "left_single_feature" },
-	                    _react2.default.createElement(
-	                      "div",
-	                      null,
-	                      _react2.default.createElement("span", { className: "pe-7s-science" })
-	                    ),
-	                    _react2.default.createElement(
-	                      "h3",
-	                      null,
-	                      "Modern Look",
-	                      _react2.default.createElement(
-	                        "span",
-	                        null,
-	                        "/"
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "p",
-	                      null,
-	                      "Lorem ipsum dolor, consectetur sed do adipisicing elit, sed do eiusmod tempor incididunt"
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    "div",
-	                    { className: "left_single_feature" },
-	                    _react2.default.createElement(
-	                      "div",
-	                      null,
-	                      _react2.default.createElement("span", { className: "pe-7s-look" })
-	                    ),
-	                    _react2.default.createElement(
-	                      "h3",
-	                      null,
-	                      "Minimal Layout",
-	                      _react2.default.createElement(
-	                        "span",
-	                        null,
-	                        "/"
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "p",
-	                      null,
-	                      "Lorem ipsum dolor, consectetur sed do adipisicing elit, sed do eiusmod tempor incididunt"
-	                    )
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "col-md-4" },
-	                  _react2.default.createElement(
-	                    "div",
-	                    { className: "feature_iphone" },
-	                    _react2.default.createElement("img", {
-	                      className: "wow bounceIn",
-	                      "data-wow-duration": "1s",
-	                      src: "assets/images/iPhone02.png",
-	                      alt: "" })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  "div",
-	                  {
-	                    className: "col-md-4 left_no_padding wow fadeInRight",
-	                    "data-wow-duration": "1s" },
-	                  _react2.default.createElement(
-	                    "div",
-	                    { className: "right_single_feature" },
-	                    _react2.default.createElement(
-	                      "div",
-	                      null,
-	                      _react2.default.createElement("span", { className: "pe-7s-monitor" })
-	                    ),
-	                    _react2.default.createElement(
-	                      "h3",
-	                      null,
-	                      _react2.default.createElement(
-	                        "span",
-	                        null,
-	                        "/"
-	                      ),
-	                      "Retina ready"
-	                    ),
-	                    _react2.default.createElement(
-	                      "p",
-	                      null,
-	                      "Lorem ipsum dolor, consectetur sed do adipisicing elit, sed do eiusmod tempor incididunt"
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    "div",
-	                    { className: "right_single_feature" },
-	                    _react2.default.createElement(
-	                      "div",
-	                      null,
-	                      _react2.default.createElement("span", { className: "pe-7s-phone" })
-	                    ),
-	                    _react2.default.createElement(
-	                      "h3",
-	                      null,
-	                      _react2.default.createElement(
-	                        "span",
-	                        null,
-	                        "/"
-	                      ),
-	                      "Responsive Ready"
-	                    ),
-	                    _react2.default.createElement(
-	                      "p",
-	                      null,
-	                      "Lorem ipsum dolor, consectetur sed do adipisicing elit, sed do eiusmod tempor incididunt"
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    "div",
-	                    { className: "right_single_feature" },
-	                    _react2.default.createElement(
-	                      "div",
-	                      null,
-	                      _react2.default.createElement("span", { className: "pe-7s-gleam" })
-	                    ),
-	                    _react2.default.createElement(
-	                      "h3",
-	                      null,
-	                      _react2.default.createElement(
-	                        "span",
-	                        null,
-	                        "/"
-	                      ),
-	                      "Clean Code"
-	                    ),
-	                    _react2.default.createElement(
-	                      "p",
-	                      null,
-	                      "Lorem ipsum dolor, consectetur sed do adipisicing elit, sed do eiusmod tempor incididunt"
-	                    )
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "call_to_action" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "container" },
-	            _react2.default.createElement(
-	              "div",
-	              { className: "row wow fadeInLeftBig", "data-wow-duration": "1s" },
-	              _react2.default.createElement(
-	                "div",
-	                { className: "col-md-9" },
-	                _react2.default.createElement(
-	                  "p",
-	                  null,
-	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et olore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "div",
-	                { className: "col-md-3" },
-	                _react2.default.createElement(
-	                  "a",
-	                  { className: "btn btn-primary btn-action", href: "#", role: "button" },
-	                  "Download Now"
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "section",
-	          { className: "apps_screen page", id: "SCREENS" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "container" },
-	            _react2.default.createElement(
-	              "div",
-	              { className: "row" },
-	              _react2.default.createElement(
-	                "div",
-	                { className: "col-md-10 col-md-offset-1 wow fadeInBig", "data-wow-duration": "1s" },
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "section_title" },
-	                  _react2.default.createElement(
-	                    "h2",
-	                    null,
-	                    "Screenshots"
-	                  ),
-	                  _react2.default.createElement(
-	                    "p",
-	                    null,
-	                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
-	                  )
-	                )
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "screen_slider" },
-	            _react2.default.createElement(
-	              "div",
-	              { id: "demo", className: "wow bounceInRight", "data-wow-duration": "1s" },
-	              _react2.default.createElement(
-	                "div",
-	                { id: "owl-demo", className: "owl-carousel" },
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "item" },
-	                  _react2.default.createElement(
-	                    "a",
-	                    { href: "assets/images/screens/iPhone04.png", rel: "prettyPhoto[pp_gal]" },
-	                    _react2.default.createElement("img", { src: "assets/images/iPhone04.png", width: "60", height: "60", alt: "APPS SCREEN" })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "item" },
-	                  _react2.default.createElement(
-	                    "a",
-	                    { href: "assets/images/screens/iPhone05.png", rel: "prettyPhoto[pp_gal]" },
-	                    _react2.default.createElement("img", { src: "assets/images/iPhone05.png", width: "60", height: "60", alt: "APPS SCREEN" })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "item" },
-	                  _react2.default.createElement(
-	                    "a",
-	                    { href: "assets/images/screens/iPhone06.png", rel: "prettyPhoto[pp_gal]" },
-	                    _react2.default.createElement("img", { src: "assets/images/iPhone06.png", width: "60", height: "60", alt: "APPS SCREEN" })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "item" },
-	                  _react2.default.createElement(
-	                    "a",
-	                    { href: "assets/images/screens/iPhone07.png", rel: "prettyPhoto[pp_gal]" },
-	                    _react2.default.createElement("img", { src: "assets/images/iPhone07.png", width: "60", height: "60", alt: "APPS SCREEN" })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "item" },
-	                  _react2.default.createElement(
-	                    "a",
-	                    { href: "assets/images/screens/iPhone08.png", rel: "prettyPhoto[pp_gal]" },
-	                    _react2.default.createElement("img", { src: "assets/images/iPhone08.png", width: "60", height: "60", alt: "APPS SCREEN" })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "item" },
-	                  _react2.default.createElement(
-	                    "a",
-	                    { href: "assets/images/screens/iPhone09.png", rel: "prettyPhoto[pp_gal]" },
-	                    _react2.default.createElement("img", { src: "assets/images/iPhone09.png", width: "60", height: "60", alt: "APPS SCREEN" })
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "section",
-	          { className: "fun_facts parallax" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "section_overlay" },
-	            _react2.default.createElement(
-	              "div",
-	              { className: "container wow bounceInLeft", "data-wow-duration": "1s" },
-	              _react2.default.createElement(
-	                "div",
-	                { className: "row text-center" },
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "col-md-3" },
-	                  _react2.default.createElement(
-	                    "div",
-	                    { className: "single_fun_facts" },
-	                    _react2.default.createElement("i", { className: "pe-7s-cloud-download" }),
-	                    _react2.default.createElement(
-	                      "h2",
-	                      null,
-	                      _react2.default.createElement(
-	                        "span",
-	                        { className: "counter_num" },
-	                        "699"
-	                      ),
-	                      _react2.default.createElement(
-	                        "span",
-	                        null,
-	                        "+"
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "p",
-	                      null,
-	                      "Downloads"
-	                    )
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "col-md-3" },
-	                  _react2.default.createElement(
-	                    "div",
-	                    { className: "single_fun_facts" },
-	                    _react2.default.createElement("i", { className: "pe-7s-look" }),
-	                    _react2.default.createElement(
-	                      "h2",
-	                      null,
-	                      _react2.default.createElement(
-	                        "span",
-	                        { className: "counter_num" },
-	                        "1999"
-	                      ),
-	                      _react2.default.createElement(
-	                        "span",
-	                        null,
-	                        "+"
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "p",
-	                      null,
-	                      "Likes"
-	                    )
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "col-md-3" },
-	                  _react2.default.createElement(
-	                    "div",
-	                    { className: "single_fun_facts" },
-	                    _react2.default.createElement("i", { className: "pe-7s-comment" }),
-	                    _react2.default.createElement(
-	                      "h2",
-	                      null,
-	                      _react2.default.createElement(
-	                        "span",
-	                        { className: "counter_num" },
-	                        "199"
-	                      ),
-	                      _react2.default.createElement(
-	                        "span",
-	                        null,
-	                        "+"
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "p",
-	                      null,
-	                      "Feedbacks"
-	                    )
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "col-md-3" },
-	                  _react2.default.createElement(
-	                    "div",
-	                    { className: "single_fun_facts" },
-	                    _react2.default.createElement("i", { className: "pe-7s-cup" }),
-	                    _react2.default.createElement(
-	                      "h2",
-	                      null,
-	                      _react2.default.createElement(
-	                        "span",
-	                        { className: "counter_num" },
-	                        "10"
-	                      ),
-	                      _react2.default.createElement(
-	                        "span",
-	                        null,
-	                        "+"
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "p",
-	                      null,
-	                      "Awards"
-	                    )
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "section",
-	          { className: "download page", id: "DOWNLOAD" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "container" },
-	            _react2.default.createElement(
-	              "div",
-	              { className: "row" },
-	              _react2.default.createElement(
-	                "div",
-	                { className: "col-md-10 col-md-offset-1" },
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "section_title" },
-	                  _react2.default.createElement(
-	                    "h2",
-	                    null,
-	                    "download now"
-	                  ),
-	                  _react2.default.createElement(
-	                    "p",
-	                    null,
-	                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
-	                  )
-	                )
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "container" },
-	            _react2.default.createElement(
-	              "div",
-	              { className: "row" },
-	              _react2.default.createElement(
-	                "div",
-	                { className: "col-md-8 col-md-offset-2" },
-	                _react2.default.createElement(
-	                  "div",
-	                  {
-	                    className: "download_screen text-center wow fadeInUp",
-	                    "data-wow-duration": "1s" },
-	                  _react2.default.createElement("img", { src: "assets/images/download_screen.png", alt: "" })
-	                )
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "available_store" },
-	            _react2.default.createElement(
-	              "div",
-	              { className: "container  wow bounceInRight", "data-wow-duration": "1s" },
-	              _react2.default.createElement(
-	                "div",
-	                { className: "col-md-6" },
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "available_title" },
-	                  _react2.default.createElement(
-	                    "h2",
-	                    null,
-	                    "Available on"
-	                  ),
-	                  _react2.default.createElement(
-	                    "p",
-	                    null,
-	                    "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-	                  )
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "div",
-	                { className: "col-md-6" },
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "row" },
-	                  _react2.default.createElement(
-	                    "a",
-	                    { href: "" },
-	                    _react2.default.createElement(
-	                      "div",
-	                      { className: "col-md-4 no_padding" },
-	                      _react2.default.createElement(
-	                        "div",
-	                        { className: "single_store" },
-	                        _react2.default.createElement("i", { className: "fa fa-apple" }),
-	                        _react2.default.createElement(
-	                          "div",
-	                          { className: "store_inner" },
-	                          _react2.default.createElement(
-	                            "h2",
-	                            null,
-	                            "iOS"
-	                          )
-	                        )
-	                      )
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    "div",
-	                    { className: "col-md-4 no_padding" },
-	                    _react2.default.createElement(
-	                      "a",
-	                      { href: "" },
-	                      _react2.default.createElement(
-	                        "div",
-	                        { className: "single_store" },
-	                        _react2.default.createElement("i", { className: "fa fa-android" }),
-	                        _react2.default.createElement(
-	                          "div",
-	                          { className: "store_inner" },
-	                          _react2.default.createElement(
-	                            "h2",
-	                            null,
-	                            "ANDROID"
-	                          )
-	                        )
-	                      )
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    "div",
-	                    { className: "col-md-4 no_padding" },
-	                    _react2.default.createElement(
-	                      "a",
-	                      { href: "" },
-	                      _react2.default.createElement(
-	                        "div",
-	                        { className: "single_store last" },
-	                        _react2.default.createElement("i", { className: "fa fa-windows" }),
-	                        _react2.default.createElement(
-	                          "div",
-	                          { className: "store_inner" },
-	                          _react2.default.createElement(
-	                            "h2",
-	                            null,
-	                            "WINDOWS"
-	                          )
-	                        )
-	                      )
-	                    )
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "section",
-	          { className: "contact page", id: "CONTACT" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "section_overlay" },
-	            _react2.default.createElement(
-	              "div",
-	              { className: "container" },
-	              _react2.default.createElement(
-	                "div",
-	                { className: "col-md-10 col-md-offset-1 wow bounceIn" },
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "section_title" },
-	                  _react2.default.createElement(
-	                    "h2",
-	                    null,
-	                    "Get in touch"
-	                  ),
-	                  _react2.default.createElement(
-	                    "p",
-	                    null,
-	                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
-	                  )
-	                )
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "div",
-	              { className: "contact_form wow bounceIn" },
-	              _react2.default.createElement(
-	                "div",
-	                { className: "container" },
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "form_error text-center" },
-	                  _react2.default.createElement(
-	                    "div",
-	                    { className: "name_error hide error" },
-	                    "Please Enter your name"
-	                  ),
-	                  _react2.default.createElement(
-	                    "div",
-	                    { className: "email_error hide error" },
-	                    "Please Enter your Email"
-	                  ),
-	                  _react2.default.createElement(
-	                    "div",
-	                    { className: "email_val_error hide error" },
-	                    "Please Enter a Valid Email Address"
-	                  ),
-	                  _react2.default.createElement(
-	                    "div",
-	                    { className: "message_error hide error" },
-	                    "Please Enter Your Message"
-	                  )
-	                ),
-	                _react2.default.createElement("div", { className: "Sucess" }),
-	                _react2.default.createElement(
-	                  "form",
-	                  { role: "form" },
-	                  _react2.default.createElement(
-	                    "div",
-	                    { className: "row" },
-	                    _react2.default.createElement(
-	                      "div",
-	                      { className: "col-md-4" },
-	                      _react2.default.createElement("input", { type: "text", className: "form-control", id: "name", placeholder: "Name" }),
-	                      _react2.default.createElement("input", { type: "email", className: "form-control", id: "email", placeholder: "Email" }),
-	                      _react2.default.createElement("input", { type: "text", className: "form-control", id: "subject", placeholder: "Subject" })
-	                    ),
-	                    _react2.default.createElement(
-	                      "div",
-	                      { className: "col-md-8" },
-	                      _react2.default.createElement("textarea", {
-	                        className: "form-control",
-	                        id: "message",
-	                        rows: "25",
-	                        cols: "10",
-	                        placeholder: "  Message Texts..." }),
-	                      _react2.default.createElement(
-	                        "button",
-	                        { type: "button", className: "btn btn-default submit-btn form_submit" },
-	                        "SEND MESSAGE"
-	                      )
-	                    )
-	                  )
-	                )
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "div",
-	              { className: "container" },
-	              _react2.default.createElement(
-	                "div",
-	                { className: "row" },
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "col-md-12 wow bounceInLeft" },
-	                  _react2.default.createElement(
-	                    "div",
-	                    { className: "social_icons" },
-	                    _react2.default.createElement(
-	                      "ul",
-	                      null,
-	                      _react2.default.createElement(
-	                        "li",
-	                        null,
-	                        _react2.default.createElement(
-	                          "a",
-	                          { href: "" },
-	                          _react2.default.createElement("i", { className: "fa fa-facebook" })
-	                        )
-	                      ),
-	                      _react2.default.createElement(
-	                        "li",
-	                        null,
-	                        _react2.default.createElement(
-	                          "a",
-	                          { href: "" },
-	                          _react2.default.createElement("i", { className: "fa fa-twitter" })
-	                        )
-	                      ),
-	                      _react2.default.createElement(
-	                        "li",
-	                        null,
-	                        _react2.default.createElement(
-	                          "a",
-	                          { href: "" },
-	                          _react2.default.createElement("i", { className: "fa fa-dribbble" })
-	                        )
-	                      ),
-	                      _react2.default.createElement(
-	                        "li",
-	                        null,
-	                        _react2.default.createElement(
-	                          "a",
-	                          { href: "" },
-	                          _react2.default.createElement("i", { className: "fa fa-behance" })
-	                        )
-	                      ),
-	                      _react2.default.createElement(
-	                        "li",
-	                        null,
-	                        _react2.default.createElement(
-	                          "a",
-	                          { href: "" },
-	                          _react2.default.createElement("i", { className: "fa fa-youtube-play" })
-	                        )
-	                      )
-	                    )
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "section",
-	          {
-	            className: "subscribe parallax subscribe-parallax",
-	            "data-stellar-background-ratio": "0.6",
-	            "data-stellar-vertical-offset": "20" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "section_overlay wow lightSpeedIn" },
-	            _react2.default.createElement(
-	              "div",
-	              { className: "container" },
-	              _react2.default.createElement(
-	                "div",
-	                { className: "row" },
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "col-md-10 col-md-offset-1" },
-	                  _react2.default.createElement(
-	                    "div",
-	                    { className: "section_title" },
-	                    _react2.default.createElement(
-	                      "h2",
-	                      null,
-	                      "SUBSCRIBE US"
-	                    ),
-	                    _react2.default.createElement(
-	                      "p",
-	                      null,
-	                      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
-	                    )
-	                  )
-	                )
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "div",
-	              { className: "container" },
-	              _react2.default.createElement(
-	                "div",
-	                { className: "row  wow lightSpeedIn" },
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "col-md-6 col-md-offset-3" },
-	                  _react2.default.createElement("div", { className: "subscription-success" }),
-	                  _react2.default.createElement("div", { className: "subscription-error" }),
-	                  _react2.default.createElement(
-	                    "form",
-	                    { id: "mc-form", className: "subscribe_form" },
-	                    _react2.default.createElement(
-	                      "div",
-	                      { className: "form-group" },
-	                      _react2.default.createElement("input", {
-	                        type: "email",
-	                        value: "",
-	                        name: "EMAIL",
-	                        className: "required email form-control",
-	                        id: "mce-EMAIL",
-	                        placeholder: "Enter Email Address" })
-	                    ),
-	                    _react2.default.createElement(
-	                      "button",
-	                      { type: "submit", className: "btn btn-default subs-btn" },
-	                      "Submit"
-	                    )
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "section",
-	          { className: "copyright" },
-	          _react2.default.createElement("h2", null),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "container" },
-	            _react2.default.createElement(
-	              "div",
-	              { className: "row" },
-	              _react2.default.createElement(
-	                "div",
-	                { className: "col-md-6" },
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "copy_right_text" },
-	                  _react2.default.createElement(
-	                    "p",
-	                    null,
-	                    "Copyright © 2016. All Rights Reserved."
-	                  ),
-	                  _react2.default.createElement(
-	                    "p",
-	                    null,
-	                    "A theme by",
-	                    _react2.default.createElement(
-	                      "a",
-	                      { href: "https://dcrazed.com/" },
-	                      "Dcrazed"
-	                    )
-	                  )
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "div",
-	                { className: "col-md-6" },
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "scroll_top" },
-	                  _react2.default.createElement(
-	                    "a",
-	                    { href: "#HOME" },
-	                    _react2.default.createElement("i", { className: "fa fa-angle-up" })
+	                      );
+	                    })
 	                  )
 	                )
 	              )
@@ -3241,17 +3332,141 @@ webpackJsonp([1],[
 	      );
 	    }
 	  }]);
-	  return IndexComponent;
+	  return Patrocinadores;
 	}(_react.Component);
 
-	IndexComponent.propTypes = {};
+	Patrocinadores.propTypes = {
+	  patrocinadores_list: _react.PropTypes.array.isRequired
+	};
 
-	exports.default = IndexComponent;
+	exports.default = Patrocinadores;
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "Index.component.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "Patrocinadores.component.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 340 */
+/* 342 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _getPrototypeOf = __webpack_require__(253);
+
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+	var _classCallCheck2 = __webpack_require__(279);
+
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+	var _createClass2 = __webpack_require__(280);
+
+	var _createClass3 = _interopRequireDefault(_createClass2);
+
+	var _possibleConstructorReturn2 = __webpack_require__(284);
+
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+	var _inherits2 = __webpack_require__(331);
+
+	var _inherits3 = _interopRequireDefault(_inherits2);
+
+	var _react = __webpack_require__(3);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Fotos = function (_Component) {
+	  (0, _inherits3.default)(Fotos, _Component);
+
+	  function Fotos() {
+	    (0, _classCallCheck3.default)(this, Fotos);
+	    return (0, _possibleConstructorReturn3.default)(this, (Fotos.__proto__ || (0, _getPrototypeOf2.default)(Fotos)).apply(this, arguments));
+	  }
+
+	  (0, _createClass3.default)(Fotos, [{
+	    key: "render",
+	    value: function render() {
+	      var fotos_list = this.props.fotos_list;
+
+
+	      return _react2.default.createElement(
+	        "section",
+	        { className: "apps_screen page", id: "SCREENS" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "container" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "row" },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "col-md-10 col-md-offset-1 wow fadeInBig", "data-wow-duration": "1s" },
+	              _react2.default.createElement(
+	                "div",
+	                { className: "section_title" },
+	                _react2.default.createElement(
+	                  "h2",
+	                  null,
+	                  "Carrera 2015"
+	                ),
+	                _react2.default.createElement(
+	                  "p",
+	                  null,
+	                  "quis nostrud exercitation ullamco laboris nisi ut aliquip."
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "screen_slider" },
+	          _react2.default.createElement(
+	            "div",
+	            { id: "demo", className: "wow bounceInRight", "data-wow-duration": "1s" },
+	            _react2.default.createElement(
+	              "div",
+	              { id: "owl-demo", className: "owl-carousel" },
+	              fotos_list.map(function (item, i) {
+	                return _react2.default.createElement(
+	                  "div",
+	                  { className: "item", key: i },
+	                  _react2.default.createElement(
+	                    "a",
+	                    { href: item.image, rel: "prettyPhoto[pp_gal]" },
+	                    _react2.default.createElement("img", {
+	                      src: item.image,
+	                      width: item.width,
+	                      height: item.height,
+	                      alt: "APPS SCREEN" })
+	                  )
+	                );
+	              })
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	  return Fotos;
+	}(_react.Component);
+
+	Fotos.propTypes = {
+	  fotos_list: _react.PropTypes.array.isRequired
+	};
+
+	exports.default = Fotos;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "Fotos.component.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 343 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -3265,11 +3480,11 @@ webpackJsonp([1],[
 	exports.buscar_request = buscar_request;
 	exports.listar = listar;
 
-	var _axios = __webpack_require__(341);
+	var _axios = __webpack_require__(344);
 
 	var _axios2 = _interopRequireDefault(_axios);
 
-	var _buscar = __webpack_require__(363);
+	var _buscar = __webpack_require__(366);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -3314,20 +3529,20 @@ webpackJsonp([1],[
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "buscar.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 341 */
+/* 344 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(342);
+	module.exports = __webpack_require__(345);
 
 /***/ },
-/* 342 */
+/* 345 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(343);
-	var bind = __webpack_require__(344);
-	var Axios = __webpack_require__(345);
+	var utils = __webpack_require__(346);
+	var bind = __webpack_require__(347);
+	var Axios = __webpack_require__(348);
 
 	/**
 	 * Create an instance of Axios
@@ -3363,7 +3578,7 @@ webpackJsonp([1],[
 	axios.all = function all(promises) {
 	  return Promise.all(promises);
 	};
-	axios.spread = __webpack_require__(362);
+	axios.spread = __webpack_require__(365);
 
 	module.exports = axios;
 
@@ -3372,12 +3587,12 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 343 */
+/* 346 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var bind = __webpack_require__(344);
+	var bind = __webpack_require__(347);
 
 	/*global toString:true*/
 
@@ -3677,7 +3892,7 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 344 */
+/* 347 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -3694,17 +3909,17 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 345 */
+/* 348 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var defaults = __webpack_require__(346);
-	var utils = __webpack_require__(343);
-	var InterceptorManager = __webpack_require__(348);
-	var dispatchRequest = __webpack_require__(349);
-	var isAbsoluteURL = __webpack_require__(360);
-	var combineURLs = __webpack_require__(361);
+	var defaults = __webpack_require__(349);
+	var utils = __webpack_require__(346);
+	var InterceptorManager = __webpack_require__(351);
+	var dispatchRequest = __webpack_require__(352);
+	var isAbsoluteURL = __webpack_require__(363);
+	var combineURLs = __webpack_require__(364);
 
 	/**
 	 * Create a new instance of Axios
@@ -3785,13 +4000,13 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 346 */
+/* 349 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(343);
-	var normalizeHeaderName = __webpack_require__(347);
+	var utils = __webpack_require__(346);
+	var normalizeHeaderName = __webpack_require__(350);
 
 	var PROTECTION_PREFIX = /^\)\]\}',?\n/;
 	var DEFAULT_CONTENT_TYPE = {
@@ -3863,12 +4078,12 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 347 */
+/* 350 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(343);
+	var utils = __webpack_require__(346);
 
 	module.exports = function normalizeHeaderName(headers, normalizedName) {
 	  utils.forEach(headers, function processHeader(value, name) {
@@ -3881,12 +4096,12 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 348 */
+/* 351 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(343);
+	var utils = __webpack_require__(346);
 
 	function InterceptorManager() {
 	  this.handlers = [];
@@ -3939,13 +4154,13 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 349 */
+/* 352 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 
-	var utils = __webpack_require__(343);
-	var transformData = __webpack_require__(350);
+	var utils = __webpack_require__(346);
+	var transformData = __webpack_require__(353);
 
 	/**
 	 * Dispatch a request to the server using whichever adapter
@@ -3986,10 +4201,10 @@ webpackJsonp([1],[
 	    adapter = config.adapter;
 	  } else if (typeof XMLHttpRequest !== 'undefined') {
 	    // For browsers use XHR adapter
-	    adapter = __webpack_require__(351);
+	    adapter = __webpack_require__(354);
 	  } else if (typeof process !== 'undefined') {
 	    // For node use HTTP adapter
-	    adapter = __webpack_require__(351);
+	    adapter = __webpack_require__(354);
 	  }
 
 	  return Promise.resolve(config)
@@ -4021,12 +4236,12 @@ webpackJsonp([1],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(200)))
 
 /***/ },
-/* 350 */
+/* 353 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(343);
+	var utils = __webpack_require__(346);
 
 	/**
 	 * Transform the data for a request or a response
@@ -4047,18 +4262,18 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 351 */
+/* 354 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(343);
-	var settle = __webpack_require__(352);
-	var buildURL = __webpack_require__(355);
-	var parseHeaders = __webpack_require__(356);
-	var isURLSameOrigin = __webpack_require__(357);
-	var createError = __webpack_require__(353);
-	var btoa = (typeof window !== 'undefined' && window.btoa) || __webpack_require__(358);
+	var utils = __webpack_require__(346);
+	var settle = __webpack_require__(355);
+	var buildURL = __webpack_require__(358);
+	var parseHeaders = __webpack_require__(359);
+	var isURLSameOrigin = __webpack_require__(360);
+	var createError = __webpack_require__(356);
+	var btoa = (typeof window !== 'undefined' && window.btoa) || __webpack_require__(361);
 
 	module.exports = function xhrAdapter(config) {
 	  return new Promise(function dispatchXhrRequest(resolve, reject) {
@@ -4152,7 +4367,7 @@ webpackJsonp([1],[
 	    // This is only done if running in a standard browser environment.
 	    // Specifically not if we're in a web worker, or react-native.
 	    if (utils.isStandardBrowserEnv()) {
-	      var cookies = __webpack_require__(359);
+	      var cookies = __webpack_require__(362);
 
 	      // Add xsrf header
 	      var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ?
@@ -4215,12 +4430,12 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 352 */
+/* 355 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var createError = __webpack_require__(353);
+	var createError = __webpack_require__(356);
 
 	/**
 	 * Resolve or reject a Promise based on response status.
@@ -4246,12 +4461,12 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 353 */
+/* 356 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var enhanceError = __webpack_require__(354);
+	var enhanceError = __webpack_require__(357);
 
 	/**
 	 * Create an Error with the specified message, config, error code, and response.
@@ -4269,7 +4484,7 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 354 */
+/* 357 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -4294,12 +4509,12 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 355 */
+/* 358 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(343);
+	var utils = __webpack_require__(346);
 
 	function encode(val) {
 	  return encodeURIComponent(val).
@@ -4368,12 +4583,12 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 356 */
+/* 359 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(343);
+	var utils = __webpack_require__(346);
 
 	/**
 	 * Parse headers into an object
@@ -4411,12 +4626,12 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 357 */
+/* 360 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(343);
+	var utils = __webpack_require__(346);
 
 	module.exports = (
 	  utils.isStandardBrowserEnv() ?
@@ -4485,7 +4700,7 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 358 */
+/* 361 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -4527,12 +4742,12 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 359 */
+/* 362 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(343);
+	var utils = __webpack_require__(346);
 
 	module.exports = (
 	  utils.isStandardBrowserEnv() ?
@@ -4586,7 +4801,7 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 360 */
+/* 363 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -4606,7 +4821,7 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 361 */
+/* 364 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -4624,7 +4839,7 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 362 */
+/* 365 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -4657,7 +4872,7 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 363 */
+/* 366 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -4685,16 +4900,16 @@ webpackJsonp([1],[
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "buscar.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 364 */
+/* 367 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(365);
+	var content = __webpack_require__(368);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(367)(content, {});
+	var update = __webpack_require__(370)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -4711,10 +4926,10 @@ webpackJsonp([1],[
 	}
 
 /***/ },
-/* 365 */
+/* 368 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(366)();
+	exports = module.exports = __webpack_require__(369)();
 	// imports
 
 
@@ -4725,7 +4940,7 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 366 */
+/* 369 */
 /***/ function(module, exports) {
 
 	/*
@@ -4781,7 +4996,7 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 367 */
+/* 370 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -5033,7 +5248,7 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 368 */
+/* 371 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -5072,7 +5287,7 @@ webpackJsonp([1],[
 
 	var _reactRedux = __webpack_require__(98);
 
-	var _NoMatchComponent = __webpack_require__(369);
+	var _NoMatchComponent = __webpack_require__(372);
 
 	var _NoMatchComponent2 = _interopRequireDefault(_NoMatchComponent);
 
@@ -5106,7 +5321,7 @@ webpackJsonp([1],[
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 369 */
+/* 372 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -5171,7 +5386,7 @@ webpackJsonp([1],[
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "NoMatch.component.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 370 */
+/* 373 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -5185,13 +5400,13 @@ webpackJsonp([1],[
 
 	var _redux = __webpack_require__(105);
 
-	var _reduxThunk = __webpack_require__(371);
+	var _reduxThunk = __webpack_require__(374);
 
 	var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 
-	var _middleware = __webpack_require__(372);
+	var _middleware = __webpack_require__(375);
 
-	var _reducers = __webpack_require__(374);
+	var _reducers = __webpack_require__(377);
 
 	var _reducers2 = _interopRequireDefault(_reducers);
 
@@ -5219,7 +5434,7 @@ webpackJsonp([1],[
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 371 */
+/* 374 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -5247,7 +5462,7 @@ webpackJsonp([1],[
 	exports['default'] = thunk;
 
 /***/ },
-/* 372 */
+/* 375 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -5259,7 +5474,7 @@ webpackJsonp([1],[
 	});
 	exports.logger = undefined;
 
-	var _logger = __webpack_require__(373);
+	var _logger = __webpack_require__(376);
 
 	var _logger2 = _interopRequireDefault(_logger);
 
@@ -5270,7 +5485,7 @@ webpackJsonp([1],[
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 373 */
+/* 376 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -5293,7 +5508,7 @@ webpackJsonp([1],[
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "logger.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 374 */
+/* 377 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -5308,7 +5523,7 @@ webpackJsonp([1],[
 
 	var _redux = __webpack_require__(105);
 
-	var _buscar = __webpack_require__(375);
+	var _buscar = __webpack_require__(378);
 
 	var _buscar2 = _interopRequireDefault(_buscar);
 
@@ -5322,7 +5537,7 @@ webpackJsonp([1],[
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 375 */
+/* 378 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -5336,9 +5551,9 @@ webpackJsonp([1],[
 
 	var _redux = __webpack_require__(105);
 
-	var _buscar = __webpack_require__(363);
+	var _buscar = __webpack_require__(366);
 
-	var _immutable = __webpack_require__(376);
+	var _immutable = __webpack_require__(379);
 
 	var _immutable2 = _interopRequireDefault(_immutable);
 
@@ -5375,7 +5590,7 @@ webpackJsonp([1],[
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/david/Documentos/Proyectos/ReactJS/ReactJS/Ejercito/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "buscar.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 376 */
+/* 379 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**

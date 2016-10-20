@@ -1,5 +1,9 @@
 import React, {Component, PropTypes} from 'react';
 
+import Menu from './Menu.component.jsx';
+import Patrocinadores from './Patrocinadores.component.jsx';
+import Fotos from './Fotos.component.jsx';
+
 class IndexComponent extends Component {
   render() {
     return (
@@ -30,35 +34,32 @@ class IndexComponent extends Component {
                     <span className="icon-bar"></span>
                   </button>
                   <a className="navbar-brand" href="#">
-                    <img src="assets/images/logo.png" alt="Logo"/></a>
+                    <img src="assets/images/ejercito/logo.png" alt="Logo"/>
+                  </a>
                 </div>
 
-                <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul className="nav navbar-nav navbar-right">
-
-                    <li>
-                      <a href="#HOME">HOME</a>
-                    </li>
-                    <li>
-                      <a href="#ABOUT">ABOUT
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#FEATURES">FEATURES</a>
-                    </li>
-                    <li>
-                      <a href="#SCREENS">SCREENS</a>
-                    </li>
-                    <li>
-                      <a href="#DOWNLOAD">DOWNLOAD
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#CONTACT">CONTACT
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+                <Menu
+                  menu_list={[
+                  {
+                    href: '#HOME',
+                    name: 'INICIO'
+                  }, {
+                    href: '#ABOUT',
+                    name: 'ABOUT'
+                  }, {
+                    href: '#FEATURES',
+                    name: 'FEATURES'
+                  }, {
+                    href: '#SCREENS',
+                    name: 'SCREENS'
+                  }, {
+                    href: '#DOWNLOAD',
+                    name: 'DOWNLOAD'
+                  }, {
+                    href: '#CONTACT',
+                    name: 'CONTACT'
+                  }
+                ]}/>
 
               </div>
 
@@ -69,15 +70,16 @@ class IndexComponent extends Component {
                 <div className="col-md-12">
                   <div className="logo text-center">
 
-                    <img width="125" height="55" src="assets/images/logo.png" alt=""/></div>
+                    <img width="125" height="55" src="assets/images/ejercito/logo.png" alt=""/></div>
                 </div>
               </div>
               <div className="row">
                 <div className="col-md-8 col-sm-8">
                   <div className="home_text">
 
-                    <h1>Brilliant Landing Page Design. Executed for Your App</h1>
-                    <p>Now create a beautiful, app landing page.</p>
+                    <h1>Carrera por los Héroes</h1>
+                    <p>La Corporación Matamoros y ANASE se unieron para realizar la Carrera por los
+                      Héroes a nivel nacional para apoyar a los héroes de la patria y sus familias.</p>
 
                     <div className="download-btn">
 
@@ -90,7 +92,7 @@ class IndexComponent extends Component {
                 </div>
                 <div className="col-md-3 col-md-offset-1 col-sm-4">
                   <div className="home-iphone">
-                    <img src="assets/images/iPhone_Home.png" alt=""/>
+                    <img src="assets/images/ejercito/portada_decor.jpg" alt=""/>
                   </div>
                 </div>
               </div>
@@ -98,92 +100,46 @@ class IndexComponent extends Component {
           </div>
         </section>
 
-        <section id="TESTIMONIAL" className="testimonial parallax">
-          <div className="section_overlay">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-12 wow bounceInDown">
-                  <div
-                    id="carousel-example-caption-testimonial"
-                    className="carousel slide"
-                    data-ride="carousel">
-
-                    <ol className="carousel-indicators">
-                      <li
-                        data-target="#carousel-example-caption-testimonial"
-                        data-slide-to="0"
-                        className="active"></li>
-                      <li data-target="#carousel-example-caption-testimonial" data-slide-to="1"></li>
-                      <li data-target="#carousel-example-caption-testimonial" data-slide-to="2"></li>
-                    </ol>
-
-                    <div className="carousel-inner">
-                      <div className="item active">
-                        <div className="container">
-                          <div className="row">
-                            <div className="col-md-12 text-center">
-
-                              <img src="assets/images/client_1.png" alt=""/>
-                              <div className="testimonial_caption">
-                                <h2>Dan Harmon</h2>
-                                <h4>
-                                  <span>SR. UI Designer,</span>
-                                  Dcrazed</h4>
-                                <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor
-                                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud
-                                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="container">
-                          <div className="row">
-                            <div className="col-md-12 text-center">
-
-                              <img src="assets/images/client_2.png" alt=""/>
-                              <div className="testimonial_caption">
-
-                                <h2>Allie Kingsley</h2>
-                                <h4>
-                                  <span>SR. Content Strategist,</span>
-                                  Designscrazed</h4>
-                                <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor
-                                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud
-                                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="container">
-                          <div className="row">
-                            <div className="col-md-12 text-center">
-
-                              <img src="assets/images/client_3.png" alt=""/>
-                              <div className="testimonial_caption">
-
-                                <h2>Joel Mchale</h2>
-                                <h4>
-                                  <span>SR. Developer,</span>
-                                  Treehouse</h4>
-                                <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor
-                                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud
-                                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Patrocinadores
+          patrocinadores_list={[
+          {
+            title: 'Emerald Energy',
+            span1: 'Empresa,',
+            span2: '1996',
+            image: 'assets/images/patrocinadores/Emerald_Energy_Logo.png',
+            descr: 'Emerald Energy es una empresa, establecida en 1996 la cual hace parte de la Corporación Sinochem. Desde su constitución se ha dedicado principalmente a la exploración, desarrollo y producción de petróleo. Después de varios años de desarrollo, la empresa ya ha establecido equipos altamente experimentados y profesionales en tecnología y gestión de la exploración de petróleo y producción del mismo.'
+          }, {
+            title: 'Azteca Comunicaciones',
+            span1: 'Empresa,',
+            span2: '2011',
+            image: 'assets/images/patrocinadores/azteca.png',
+            descr: 'Azteca Comunicaciones Colombia, en el año 2011, fue la empresa seleccionada por el gobierno nacional para planear, diseñar, instalar, poner en servicio, administrar, operar y mantener la red de transporte óptico en cerca de 753 municipios y 2000 instituciones públicas, orientado a la expansión de la infraestructura de fibra óptica nacional, dentro del marco del Proyecto Nacional de Fibra Óptica'
+          }, {
+            title: 'Satena',
+            span1: 'Empresa,',
+            span2: 'Aerolinea',
+            image: 'assets/images/patrocinadores/satena.png',
+            descr: 'SATENA es la única aerolínea estatal que tiene la obligación de hacer presencia en aquellas regiones donde por cuestiones geográficas, de orden público y de pobreza, no llega ningún otro operador y es aquí donde precisamente se refleja el Estado en desarrollo y cumplimiento de sus fines y objetivos, cumple una labor de vital importancia en la generación de desarrollo económico y social de las regiones atendidas, integrándolas con los principales centros económicos del país'
+          }, {
+            title: 'Postobón',
+            span1: 'Empresa,',
+            span2: '1904',
+            image: 'assets/images/patrocinadores/Postobon.png',
+            descr: 'Postobón es una compañía de bebidas Colombiana. Es una de las empresas más grandes del país y una de las principales en América del Sur.'
+          }, {
+            title: '',
+            span1: 'Empresa',
+            span2: '',
+            image: 'assets/images/patrocinadores/',
+            descr: ''
+          }, {
+            title: '',
+            span1: 'Empresa',
+            span2: '',
+            image: 'assets/images/patrocinadores/',
+            descr: ''
+          }
+        ]}/>
 
         <section id="FEATURES" className="features page">
           <div className="container">
@@ -191,10 +147,12 @@ class IndexComponent extends Component {
               <div className="col-md-10 col-md-offset-1">
 
                 <div className="section_title wow fadeIn" data-wow-duration="1s">
-                  <h2>Features</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                  <h2>Nuestra Alianza</h2>
+                  <p>La Corporación Matamoros y ANASE se unieron para realizar la Carrera por los
+                    Héroes a nivel nacional para apoyar a los héroes de la patria y sus familias. El
+                    objetivo de este evento es entregar una solución de vivienda a las familias, o
+                    familiares de los soldados discapacitados o enfermos héroes del Caquetá.
+                  </p>
                 </div>
 
               </div>
@@ -211,37 +169,36 @@ class IndexComponent extends Component {
                   <div className="left_single_feature">
 
                     <div>
-                      <span className="pe-7s-like"></span>
+                      <span className="pe-7s-pin"></span>
                     </div>
 
-                    <h3>Creative Design<span>/</span>
+                    <h3>Lugar<span>/</span>
                     </h3>
-                    <p>Lorem ipsum dolor, consectetur sed do adipisicing elit, sed do eiusmod tempor
-                      incididunt</p>
+                    <p>Florencia Caquetá</p>
                   </div>
 
                   <div className="left_single_feature">
 
                     <div>
-                      <span className="pe-7s-science"></span>
+                      <span className="pe-7s-date"></span>
                     </div>
 
-                    <h3>Modern Look<span>/</span>
+                    <h3>Fecha y hora<span>/</span>
                     </h3>
-                    <p>Lorem ipsum dolor, consectetur sed do adipisicing elit, sed do eiusmod tempor
-                      incididunt</p>
+                    <p>Domingo 6 de noviembre de 2016, 7:30 am.</p>
                   </div>
 
                   <div className="left_single_feature">
 
                     <div>
-                      <span className="pe-7s-look"></span>
+                      <span className="pe-7s-way"></span>
                     </div>
 
-                    <h3>Minimal Layout<span>/</span>
+                    <h3>Recorrido<span>/</span>
                     </h3>
-                    <p>Lorem ipsum dolor, consectetur sed do adipisicing elit, sed do eiusmod tempor
-                      incididunt</p>
+                    <p>7 Km (competitivo)
+                      <br/>
+                      3 Km (recreativo)</p>
                   </div>
 
                 </div>
@@ -251,7 +208,7 @@ class IndexComponent extends Component {
                     <img
                       className="wow bounceIn"
                       data-wow-duration="1s"
-                      src="assets/images/iPhone02.png"
+                      src="assets/images/ejercito/deportista-corriendo.jpg"
                       alt=""/>
                   </div>
                 </div>
@@ -265,21 +222,20 @@ class IndexComponent extends Component {
                     </div>
 
                     <h3>
-                      <span>/</span>Retina ready</h3>
-                    <p>Lorem ipsum dolor, consectetur sed do adipisicing elit, sed do eiusmod tempor
-                      incididunt</p>
+                      <span>/</span>Categorías</h3>
+                    <p>Abierta Master Plus Acompañantes</p>
                   </div>
 
                   <div className="right_single_feature">
 
                     <div>
-                      <span className="pe-7s-phone"></span>
+                      <span className="pe-7s-cash"></span>
                     </div>
 
                     <h3>
-                      <span>/</span>Responsive Ready</h3>
-                    <p>Lorem ipsum dolor, consectetur sed do adipisicing elit, sed do eiusmod tempor
-                      incididunt</p>
+                      <span>/</span>Inscripciones</h3>
+                    <p>50.000 pesos
+                    </p>
                   </div>
 
                   <div className="right_single_feature">
@@ -289,9 +245,8 @@ class IndexComponent extends Component {
                     </div>
 
                     <h3>
-                      <span>/</span>Clean Code</h3>
-                    <p>Lorem ipsum dolor, consectetur sed do adipisicing elit, sed do eiusmod tempor
-                      incididunt</p>
+                      <span>/</span>Lanzamiento</h3>
+                    <p>30 de septiembre en el parque San Francisco.</p>
                   </div>
 
                 </div>
@@ -315,59 +270,114 @@ class IndexComponent extends Component {
           </div>
         </div>
 
-        <section className="apps_screen page" id="SCREENS">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-10 col-md-offset-1 wow fadeInBig" data-wow-duration="1s">
-
-                <div className="section_title">
-                  <h2>Screenshots</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="screen_slider">
-            <div id="demo" className="wow bounceInRight" data-wow-duration="1s">
-              <div id="owl-demo" className="owl-carousel">
-
-                <div className="item">
-                  <a href="assets/images/screens/iPhone04.png" rel="prettyPhoto[pp_gal]">
-                    <img src="assets/images/iPhone04.png" width="60" height="60" alt="APPS SCREEN"/>
-                  </a>
-                </div>
-                <div className="item">
-                  <a href="assets/images/screens/iPhone05.png" rel="prettyPhoto[pp_gal]">
-                    <img src="assets/images/iPhone05.png" width="60" height="60" alt="APPS SCREEN"/>
-                  </a>
-                </div>
-                <div className="item">
-                  <a href="assets/images/screens/iPhone06.png" rel="prettyPhoto[pp_gal]">
-                    <img src="assets/images/iPhone06.png" width="60" height="60" alt="APPS SCREEN"/>
-                  </a>
-                </div>
-                <div className="item">
-                  <a href="assets/images/screens/iPhone07.png" rel="prettyPhoto[pp_gal]">
-                    <img src="assets/images/iPhone07.png" width="60" height="60" alt="APPS SCREEN"/>
-                  </a>
-                </div>
-                <div className="item">
-                  <a href="assets/images/screens/iPhone08.png" rel="prettyPhoto[pp_gal]">
-                    <img src="assets/images/iPhone08.png" width="60" height="60" alt="APPS SCREEN"/>
-                  </a>
-                </div>
-                <div className="item">
-                  <a href="assets/images/screens/iPhone09.png" rel="prettyPhoto[pp_gal]">
-                    <img src="assets/images/iPhone09.png" width="60" height="60" alt="APPS SCREEN"/>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Fotos
+          fotos_list={[
+          {
+            image: 'assets/images/carrera2015/DSCN3438.JPG',
+            width: '60',
+            height: '60'
+          }, {
+            image: 'assets/images/carrera2015/DSCN3452.JPG',
+            width: '60',
+            height: '60'
+          }, {
+            image: 'assets/images/carrera2015/DSCN3452.JPG',
+            width: '60',
+            height: '60'
+          }, {
+            image: 'assets/images/carrera2015/DSCN3452.JPG',
+            width: '60',
+            height: '60'
+          }, {
+            image: 'assets/images/carrera2015/DSCN3488.JPG',
+            width: '60',
+            height: '60'
+          }, {
+            image: 'assets/images/carrera2015/DSCN3499.JPG',
+            width: '60',
+            height: '60'
+          }, {
+            image: 'assets/images/carrera2015/DSCN3502.JPG',
+            width: '60',
+            height: '60'
+          }, {
+            image: 'assets/images/carrera2015/DSCN3534.JPG',
+            width: '60',
+            height: '60'
+          }, {
+            image: 'assets/images/carrera2015/DSCN3534.JPG',
+            width: '60',
+            height: '60'
+          }, {
+            image: 'assets/images/carrera2015/DSCN3544.JPG',
+            width: '60',
+            height: '60'
+          }, {
+            image: 'assets/images/carrera2015/DSCN3604.JPG',
+            width: '60',
+            height: '60'
+          }, {
+            image: 'assets/images/carrera2015/DSCN3605.JPG',
+            width: '60',
+            height: '60'
+          }, {
+            image: 'assets/images/carrera2015/DSCN3611.JPG',
+            width: '60',
+            height: '60'
+          }, {
+            image: 'assets/images/carrera2015/DSCN3613.JPG',
+            width: '60',
+            height: '60'
+          }, {
+            image: 'assets/images/carrera2015/DSCN3623.JPG',
+            width: '60',
+            height: '60'
+          }, {
+            image: 'assets/images/carrera2015/DSCN3624.JPG',
+            width: '60',
+            height: '60'
+          }, {
+            image: 'assets/images/carrera2015/DSCN3631.JPG',
+            width: '60',
+            height: '60'
+          }, {
+            image: 'assets/images/carrera2015/DSCN3635.JPG',
+            width: '60',
+            height: '60'
+          }, {
+            image: 'assets/images/carrera2015/DSCN3701.JPG',
+            width: '60',
+            height: '60'
+          }, {
+            image: 'assets/images/carrera2015/DSCN3702.JPG',
+            width: '60',
+            height: '60'
+          }, {
+            image: 'assets/images/carrera2015/DSCN3708.JPG',
+            width: '60',
+            height: '60'
+          }, {
+            image: 'assets/images/carrera2015/DSCN3711.JPG',
+            width: '60',
+            height: '60'
+          }, {
+            image: 'assets/images/carrera2015/DSCN3713.JPG',
+            width: '60',
+            height: '60'
+          }, {
+            image: 'assets/images/carrera2015/DSCN3718.JPG',
+            width: '60',
+            height: '60'
+          }, {
+            image: 'assets/images/carrera2015/DSCN3724.JPG',
+            width: '60',
+            height: '60'
+          }, {
+            image: 'assets/images/carrera2015/DSCN3726.JPG',
+            width: '60',
+            height: '60'
+          }
+        ]}/>
 
         <section className="fun_facts parallax">
           <div className="section_overlay">
@@ -375,42 +385,42 @@ class IndexComponent extends Component {
               <div className="row text-center">
                 <div className="col-md-3">
                   <div className="single_fun_facts">
-                    <i className="pe-7s-cloud-download"></i>
+                    <i className="pe-7s-users"></i>
                     <h2>
-                      <span className="counter_num">699</span>
+                      <span className="counter_num">1000</span>
                       <span>+</span>
                     </h2>
-                    <p>Downloads</p>
+                    <p>Participantes</p>
                   </div>
                 </div>
                 <div className="col-md-3">
                   <div className="single_fun_facts">
-                    <i className="pe-7s-look"></i>
+                    <i className="pe-7s-star"></i>
                     <h2>
-                      <span className="counter_num">1999</span>
+                      <span className="counter_num">7</span>
                       <span>+</span>
                     </h2>
-                    <p>Likes</p>
+                    <p>Kilometros, competitivo</p>
                   </div>
                 </div>
                 <div className="col-md-3">
                   <div className="single_fun_facts">
-                    <i className="pe-7s-comment"></i>
+                    <i className="pe-7s-up-arrow"></i>
                     <h2>
-                      <span className="counter_num">199</span>
+                      <span className="counter_num">3</span>
                       <span>+</span>
                     </h2>
-                    <p>Feedbacks</p>
+                    <p>Kilometros, recreativo</p>
                   </div>
                 </div>
                 <div className="col-md-3">
                   <div className="single_fun_facts">
-                    <i className="pe-7s-cup"></i>
+                    <i className="pe-7s-date"></i>
                     <h2>
-                      <span className="counter_num">10</span>
+                      <span className="counter_num">6</span>
                       <span>+</span>
                     </h2>
-                    <p>Awards</p>
+                    <p>Noviembre</p>
                   </div>
                 </div>
               </div>

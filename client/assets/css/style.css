@@ -141,7 +141,7 @@ p {
     color: #f39c12;
 }
 .header {
-    background: url(../images/home.jpg);
+    background: url(../images/ejercito/portada.jpg);
     background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -614,7 +614,7 @@ div.carousel-inner .item img {
 -----------------------------------------*/
 
 .fun_facts {
-    background: url(../images/fun_bg.jpg) no-repeat center;
+    background: url(../images/carrera2015/DSCN3534.JPG) no-repeat center;
     background-size: cover;
 }
 .fun_facts .section_overlay {

@@ -5,7 +5,7 @@ class Fotos extends Component {
     const {fotos_list} = this.props;
 
     return (
-      <section className="apps_screen page" id="SCREENS">
+      <section className="apps_screen page" id="FOTOS">
         <div className="container">
           <div className="row">
             <div className="col-md-10 col-md-offset-1 wow fadeInBig" data-wow-duration="1s">

@@ -44,20 +44,23 @@ class IndexComponent extends Component {
                     href: '#HOME',
                     name: 'INICIO'
                   }, {
-                    href: '#ABOUT',
-                    name: 'ABOUT'
+                    href: '#PATROCINADORES',
+                    name: 'PATROCINADORES'
                   }, {
-                    href: '#FEATURES',
-                    name: 'FEATURES'
+                    href: '#ALIANZA',
+                    name: 'ALIANZA'
                   }, {
-                    href: '#SCREENS',
-                    name: 'SCREENS'
+                    href: '#FOTOS',
+                    name: 'FOTOS'
                   }, {
                     href: '#DOWNLOAD',
                     name: 'DOWNLOAD'
                   }, {
                     href: '#CONTACT',
                     name: 'CONTACT'
+                  }, {
+                    href: 'Inscripcion.aspx',
+                    name: 'INSCRIPCIONES'
                   }
                 ]}/>
 
@@ -69,8 +72,8 @@ class IndexComponent extends Component {
               <div className="row">
                 <div className="col-md-12">
                   <div className="logo text-center">
-
-                    <img width="125" height="55" src="assets/images/ejercito/logo.png" alt=""/></div>
+                    <img width="125" height="55" src="assets/images/ejercito/logo.png" alt=""/>
+                  </div>
                 </div>
               </div>
               <div className="row">
@@ -78,13 +81,15 @@ class IndexComponent extends Component {
                   <div className="home_text">
 
                     <h1>Carrera por los Héroes</h1>
-                    <p>La Corporación Matamoros y ANASE se unieron para realizar la Carrera por los
-                      Héroes a nivel nacional para apoyar a los héroes de la patria y sus familias.</p>
+                    <p>
+                      La Corporación Matamoros y ANASE se unieron para realizar la Carrera por los
+                      Héroes a nivel nacional para apoyar a los héroes de la patria y sus familias.
+                    </p>
 
                     <div className="download-btn">
 
-                      <a className="btn home-btn wow fadeInLeft" href="#DOWNLOAD">Download</a>
-                      <a className="tuor btn wow fadeInRight" href="#ABOUT">Take a tour
+                      <a className="btn home-btn wow fadeInLeft" href="#PATROCINADORES">PATROCINADORES</a>
+                      <a className="tuor btn wow fadeInRight" href="#INFO">Mas información
                         <i className="fa fa-angle-down"></i>
                       </a>
                     </div>
@@ -126,22 +131,10 @@ class IndexComponent extends Component {
             span2: '1904',
             image: 'assets/images/patrocinadores/Postobon.png',
             descr: 'Postobón es una compañía de bebidas Colombiana. Es una de las empresas más grandes del país y una de las principales en América del Sur.'
-          }, {
-            title: '',
-            span1: 'Empresa',
-            span2: '',
-            image: 'assets/images/patrocinadores/',
-            descr: ''
-          }, {
-            title: '',
-            span1: 'Empresa',
-            span2: '',
-            image: 'assets/images/patrocinadores/',
-            descr: ''
           }
         ]}/>
 
-        <section id="FEATURES" className="features page">
+        <section id="ALIANZA" className="features page">
           <div className="container">
             <div className="row">
               <div className="col-md-10 col-md-offset-1">
@@ -428,127 +421,16 @@ class IndexComponent extends Component {
           </div>
         </section>
 
-        <section className="download page" id="DOWNLOAD">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-10 col-md-offset-1">
-
-                <div className="section_title">
-                  <h2>download now</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-          <div className="container">
-            <div className="row">
-              <div className="col-md-8 col-md-offset-2">
-                <div
-                  className="download_screen text-center wow fadeInUp"
-                  data-wow-duration="1s">
-                  <img src="assets/images/download_screen.png" alt=""/>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="available_store">
-            <div className="container  wow bounceInRight" data-wow-duration="1s">
-              <div className="col-md-6">
-                <div className="available_title">
-                  <h2>Available on</h2>
-                  <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                </div>
-              </div>
-
-              <div className="col-md-6">
-                <div className="row">
-                  <a href="">
-                    <div className="col-md-4 no_padding">
-                      <div className="single_store">
-                        <i className="fa fa-apple"></i>
-                        <div className="store_inner">
-                          <h2>iOS</h2>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <div className="col-md-4 no_padding">
-                    <a href="">
-                      <div className="single_store">
-                        <i className="fa fa-android"></i>
-                        <div className="store_inner">
-                          <h2>ANDROID</h2>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="col-md-4 no_padding">
-                    <a href="">
-                      <div className="single_store last">
-                        <i className="fa fa-windows"></i>
-                        <div className="store_inner">
-                          <h2>WINDOWS</h2>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </section>
-
         <section className="contact page" id="CONTACT">
           <div className="section_overlay">
             <div className="container">
               <div className="col-md-10 col-md-offset-1 wow bounceIn">
                 <div className="section_title">
-                  <h2>Get in touch</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                  <h2>Participa</h2>
+                  <p>La Carrera de los Héroes, es un evento deportivo organizado por ANASE con en
+                    respaldo de la Corporación Matamoros con el fin de promover la solidaridad de
+                    los colombianos con los Héroes de la Patria y sus familias</p>
                 </div>
-              </div>
-            </div>
-
-            <div className="contact_form wow bounceIn">
-              <div className="container">
-
-                <div className="form_error text-center">
-                  <div className="name_error hide error">Please Enter your name</div>
-                  <div className="email_error hide error">Please Enter your Email</div>
-                  <div className="email_val_error hide error">Please Enter a Valid Email Address</div>
-                  <div className="message_error hide error">Please Enter Your Message</div>
-                </div>
-                <div className="Sucess"></div>
-
-                <form role="form">
-                  <div className="row">
-                    <div className="col-md-4">
-                      <input type="text" className="form-control" id="name" placeholder="Name"/>
-                      <input type="email" className="form-control" id="email" placeholder="Email"/>
-                      <input type="text" className="form-control" id="subject" placeholder="Subject"/>
-                    </div>
-
-                    <div className="col-md-8">
-                      <textarea
-                        className="form-control"
-                        id="message"
-                        rows="25"
-                        cols="10"
-                        placeholder="  Message Texts..."></textarea>
-                      <button type="button" className="btn btn-default submit-btn form_submit">SEND MESSAGE</button>
-                    </div>
-                  </div>
-                </form>
-
               </div>
             </div>
 
@@ -600,10 +482,7 @@ class IndexComponent extends Component {
                 <div className="col-md-10 col-md-offset-1">
 
                   <div className="section_title">
-                    <h2>SUBSCRIBE US</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                      quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                    <h2>Participa</h2>
                   </div>
                 </div>
               </div>
@@ -644,8 +523,9 @@ class IndexComponent extends Component {
                 <div className="copy_right_text">
 
                   <p>Copyright &copy; 2016. All Rights Reserved.</p>
-                  <p>A theme by
-                    <a href="https://dcrazed.com/">Dcrazed</a>
+                  <p>Ejercito Nacional de
+                    <a href="#">
+                      Colombia</a>
                   </p>
                 </div>
 

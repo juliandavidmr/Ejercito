@@ -2070,20 +2070,23 @@ webpackJsonp([1],[
 	                    href: '#HOME',
 	                    name: 'INICIO'
 	                  }, {
-	                    href: '#ABOUT',
-	                    name: 'ABOUT'
+	                    href: '#PATROCINADORES',
+	                    name: 'PATROCINADORES'
 	                  }, {
-	                    href: '#FEATURES',
-	                    name: 'FEATURES'
+	                    href: '#ALIANZA',
+	                    name: 'ALIANZA'
 	                  }, {
-	                    href: '#SCREENS',
-	                    name: 'SCREENS'
+	                    href: '#FOTOS',
+	                    name: 'FOTOS'
 	                  }, {
 	                    href: '#DOWNLOAD',
 	                    name: 'DOWNLOAD'
 	                  }, {
 	                    href: '#CONTACT',
 	                    name: 'CONTACT'
+	                  }, {
+	                    href: 'Inscripcion.aspx',
+	                    name: 'INSCRIPCIONES'
 	                  }] })
 	              )
 	            ),
@@ -2127,13 +2130,13 @@ webpackJsonp([1],[
 	                      { className: 'download-btn' },
 	                      _react2.default.createElement(
 	                        'a',
-	                        { className: 'btn home-btn wow fadeInLeft', href: '#DOWNLOAD' },
-	                        'Download'
+	                        { className: 'btn home-btn wow fadeInLeft', href: '#PATROCINADORES' },
+	                        'PATROCINADORES'
 	                      ),
 	                      _react2.default.createElement(
 	                        'a',
-	                        { className: 'tuor btn wow fadeInRight', href: '#ABOUT' },
-	                        'Take a tour',
+	                        { className: 'tuor btn wow fadeInRight', href: '#INFO' },
+	                        'Mas información',
 	                        _react2.default.createElement('i', { className: 'fa fa-angle-down' })
 	                      )
 	                    )
@@ -2177,22 +2180,10 @@ webpackJsonp([1],[
 	            span2: '1904',
 	            image: 'assets/images/patrocinadores/Postobon.png',
 	            descr: 'Postobón es una compañía de bebidas Colombiana. Es una de las empresas más grandes del país y una de las principales en América del Sur.'
-	          }, {
-	            title: '',
-	            span1: 'Empresa',
-	            span2: '',
-	            image: 'assets/images/patrocinadores/',
-	            descr: ''
-	          }, {
-	            title: '',
-	            span1: 'Empresa',
-	            span2: '',
-	            image: 'assets/images/patrocinadores/',
-	            descr: ''
 	          }] }),
 	        _react2.default.createElement(
 	          'section',
-	          { id: 'FEATURES', className: 'features page' },
+	          { id: 'ALIANZA', className: 'features page' },
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'container' },
@@ -2669,155 +2660,6 @@ webpackJsonp([1],[
 	        ),
 	        _react2.default.createElement(
 	          'section',
-	          { className: 'download page', id: 'DOWNLOAD' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'container' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'row' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'col-md-10 col-md-offset-1' },
-	                _react2.default.createElement(
-	                  'div',
-	                  { className: 'section_title' },
-	                  _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    'download now'
-	                  ),
-	                  _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.'
-	                  )
-	                )
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'container' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'row' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'col-md-8 col-md-offset-2' },
-	                _react2.default.createElement(
-	                  'div',
-	                  {
-	                    className: 'download_screen text-center wow fadeInUp',
-	                    'data-wow-duration': '1s' },
-	                  _react2.default.createElement('img', { src: 'assets/images/download_screen.png', alt: '' })
-	                )
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'available_store' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'container  wow bounceInRight', 'data-wow-duration': '1s' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'col-md-6' },
-	                _react2.default.createElement(
-	                  'div',
-	                  { className: 'available_title' },
-	                  _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    'Available on'
-	                  ),
-	                  _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-	                  )
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'col-md-6' },
-	                _react2.default.createElement(
-	                  'div',
-	                  { className: 'row' },
-	                  _react2.default.createElement(
-	                    'a',
-	                    { href: '' },
-	                    _react2.default.createElement(
-	                      'div',
-	                      { className: 'col-md-4 no_padding' },
-	                      _react2.default.createElement(
-	                        'div',
-	                        { className: 'single_store' },
-	                        _react2.default.createElement('i', { className: 'fa fa-apple' }),
-	                        _react2.default.createElement(
-	                          'div',
-	                          { className: 'store_inner' },
-	                          _react2.default.createElement(
-	                            'h2',
-	                            null,
-	                            'iOS'
-	                          )
-	                        )
-	                      )
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'col-md-4 no_padding' },
-	                    _react2.default.createElement(
-	                      'a',
-	                      { href: '' },
-	                      _react2.default.createElement(
-	                        'div',
-	                        { className: 'single_store' },
-	                        _react2.default.createElement('i', { className: 'fa fa-android' }),
-	                        _react2.default.createElement(
-	                          'div',
-	                          { className: 'store_inner' },
-	                          _react2.default.createElement(
-	                            'h2',
-	                            null,
-	                            'ANDROID'
-	                          )
-	                        )
-	                      )
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'col-md-4 no_padding' },
-	                    _react2.default.createElement(
-	                      'a',
-	                      { href: '' },
-	                      _react2.default.createElement(
-	                        'div',
-	                        { className: 'single_store last' },
-	                        _react2.default.createElement('i', { className: 'fa fa-windows' }),
-	                        _react2.default.createElement(
-	                          'div',
-	                          { className: 'store_inner' },
-	                          _react2.default.createElement(
-	                            'h2',
-	                            null,
-	                            'WINDOWS'
-	                          )
-	                        )
-	                      )
-	                    )
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'section',
 	          { className: 'contact page', id: 'CONTACT' },
 	          _react2.default.createElement(
 	            'div',
@@ -2834,75 +2676,12 @@ webpackJsonp([1],[
 	                  _react2.default.createElement(
 	                    'h2',
 	                    null,
-	                    'Get in touch'
+	                    'Participa'
 	                  ),
 	                  _react2.default.createElement(
 	                    'p',
 	                    null,
-	                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.'
-	                  )
-	                )
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'contact_form wow bounceIn' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'container' },
-	                _react2.default.createElement(
-	                  'div',
-	                  { className: 'form_error text-center' },
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'name_error hide error' },
-	                    'Please Enter your name'
-	                  ),
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'email_error hide error' },
-	                    'Please Enter your Email'
-	                  ),
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'email_val_error hide error' },
-	                    'Please Enter a Valid Email Address'
-	                  ),
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'message_error hide error' },
-	                    'Please Enter Your Message'
-	                  )
-	                ),
-	                _react2.default.createElement('div', { className: 'Sucess' }),
-	                _react2.default.createElement(
-	                  'form',
-	                  { role: 'form' },
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'row' },
-	                    _react2.default.createElement(
-	                      'div',
-	                      { className: 'col-md-4' },
-	                      _react2.default.createElement('input', { type: 'text', className: 'form-control', id: 'name', placeholder: 'Name' }),
-	                      _react2.default.createElement('input', { type: 'email', className: 'form-control', id: 'email', placeholder: 'Email' }),
-	                      _react2.default.createElement('input', { type: 'text', className: 'form-control', id: 'subject', placeholder: 'Subject' })
-	                    ),
-	                    _react2.default.createElement(
-	                      'div',
-	                      { className: 'col-md-8' },
-	                      _react2.default.createElement('textarea', {
-	                        className: 'form-control',
-	                        id: 'message',
-	                        rows: '25',
-	                        cols: '10',
-	                        placeholder: '  Message Texts...' }),
-	                      _react2.default.createElement(
-	                        'button',
-	                        { type: 'button', className: 'btn btn-default submit-btn form_submit' },
-	                        'SEND MESSAGE'
-	                      )
-	                    )
+	                    'La Carrera de los Héroes, es un evento deportivo organizado por ANASE con en respaldo de la Corporación Matamoros con el fin de promover la solidaridad de los colombianos con los Héroes de la Patria y sus familias'
 	                  )
 	                )
 	              )
@@ -2998,12 +2777,7 @@ webpackJsonp([1],[
 	                    _react2.default.createElement(
 	                      'h2',
 	                      null,
-	                      'SUBSCRIBE US'
-	                    ),
-	                    _react2.default.createElement(
-	                      'p',
-	                      null,
-	                      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.'
+	                      'Participa'
 	                    )
 	                  )
 	                )
@@ -3069,11 +2843,11 @@ webpackJsonp([1],[
 	                  _react2.default.createElement(
 	                    'p',
 	                    null,
-	                    'A theme by',
+	                    'Ejercito Nacional de',
 	                    _react2.default.createElement(
 	                      'a',
-	                      { href: 'https://dcrazed.com/' },
-	                      'Dcrazed'
+	                      { href: '#' },
+	                      'Colombia'
 	                    )
 	                  )
 	                )
@@ -3246,7 +3020,7 @@ webpackJsonp([1],[
 
 	      return _react2.default.createElement(
 	        "section",
-	        { id: "TESTIMONIAL", className: "testimonial parallax" },
+	        { id: "PATROCINADORES", className: "testimonial parallax" },
 	        _react2.default.createElement(
 	          "div",
 	          { className: "section_overlay" },
@@ -3273,7 +3047,8 @@ webpackJsonp([1],[
 	                        key: i,
 	                        "data-target": "#carousel-example-caption-testimonial",
 	                        "data-slide-to": i,
-	                        className: i == 0 ? "active" : "" });
+	                        className: i == 0 ? "active" : ""
+	                      });
 	                    })
 	                  ),
 	                  _react2.default.createElement(
@@ -3397,7 +3172,7 @@ webpackJsonp([1],[
 
 	      return _react2.default.createElement(
 	        "section",
-	        { className: "apps_screen page", id: "SCREENS" },
+	        { className: "apps_screen page", id: "FOTOS" },
 	        _react2.default.createElement(
 	          "div",
 	          { className: "container" },

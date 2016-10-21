@@ -7,7 +7,7 @@ class Patrocinadores extends Component {
     var l = (patrocinadores_list || []).length;
 
     return (
-      <section id="TESTIMONIAL" className="testimonial parallax">
+      <section id="PATROCINADORES" className="testimonial parallax">
         <div className="section_overlay">
           <div className="container">
             <div className="row">
@@ -25,7 +25,8 @@ class Patrocinadores extends Component {
                             key={i}
                             data-target="#carousel-example-caption-testimonial"
                             data-slide-to={i}
-                            className={i==0? "active": ""}>
+                            className={ i ==0 ? "active" : "" }
+                          >
                           </li>
                         );
                       })

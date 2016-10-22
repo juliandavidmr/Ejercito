@@ -45,7 +45,7 @@ function ssc_scrollArray(e, t, n, r) {
         start: +(new Date)
     });
     if (ssc_pending) {
-        return
+        return;
     }
     var i = function () {
         var s = +(new Date);
@@ -67,58 +67,58 @@ function ssc_scrollArray(e, t, n, r) {
             f.lastY += d;
             if (c) {
                 ssc_que.splice(a, 1);
-                a--
+                a--;
             }
         }
         if (t) {
             var v = e.scrollLeft;
             e.scrollLeft += o;
             if (o && e.scrollLeft === v) {
-                t = 0
+                t = 0;
             }
         }
         if (n) {
             var m = e.scrollTop;
             e.scrollTop += u;
             if (u && e.scrollTop === m) {
-                n = 0
+                n = 0;
             }
         }
         if (!t && !n) {
             ssc_que = []
         }
         if (ssc_que.length) {
-            setTimeout(i, r / ssc_framerate + 1)
+            setTimeout(i, r / ssc_framerate + 1);
         } else {
-            ssc_pending = false
+            ssc_pending = false;
         }
     };
     setTimeout(i, 0);
-    ssc_pending = true
+    ssc_pending = true;
 }
 
 function ssc_wheel(e) {
     if (!ssc_initdone) {
-        ssc_init()
+        ssc_init();
     }
     var t = e.target;
     var n = ssc_overflowingAncestor(t);
     if (!n || e.defaultPrevented || ssc_isNodeName(ssc_activeElement, "embed") || ssc_isNodeName(t, "embed") && /\.pdf/i.test(t.src)) {
-        return true
+        return true;
     }
     var r = e.wheelDeltaX || 0;
     var i = e.wheelDeltaY || 0;
     if (!r && !i) {
-        i = e.wheelDelta || 0
+        i = e.wheelDelta || 0;
     }
     if (Math.abs(r) > 1.2) {
-        r *= ssc_stepsize / 120
+        r *= ssc_stepsize / 120;
     }
     if (Math.abs(i) > 1.2) {
-        i *= ssc_stepsize / 120
+        i *= ssc_stepsize / 120;
     }
     ssc_scrollArray(n, -r, -i);
-    e.preventDefault()
+    e.preventDefault();
 }
 
 function ssc_keydown(e) {
@@ -135,7 +135,7 @@ function ssc_keydown(e) {
     var o = ssc_overflowingAncestor(ssc_activeElement);
     var u = o.clientHeight;
     if (o == document.body) {
-        u = window.innerHeight
+        u = window.innerHeight;
     }
     switch (e.keyCode) {
     case ssc_key.up:
@@ -168,19 +168,19 @@ function ssc_keydown(e) {
         i = ssc_arrowscroll;
         break;
     default:
-        return true
+        return true;
     }
     ssc_scrollArray(o, i, s);
-    e.preventDefault()
+    e.preventDefault();
 }
 
 function ssc_mousedown(e) {
-    ssc_activeElement = e.target
+    ssc_activeElement = e.target;
 }
 
 function ssc_setCache(e, t) {
     for (var n = e.length; n--;) ssc_cache[ssc_uniqueID(e[n])] = t;
-    return t
+    return t;
 }
 
 function ssc_overflowingAncestor(e) {
@@ -189,7 +189,7 @@ function ssc_overflowingAncestor(e) {
     do {
         var r = ssc_cache[ssc_uniqueID(e)];
         if (r) {
-            return ssc_setCache(t, r)
+            return ssc_setCache(t, r);
         }
         t.push(e);
         if (n === e.scrollHeight) {

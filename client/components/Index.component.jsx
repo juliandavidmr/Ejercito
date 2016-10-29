@@ -2,9 +2,19 @@ import React, {Component, PropTypes} from 'react';
 
 import Menu from './Menu.component.jsx';
 import Patrocinadores from './Patrocinadores.component.jsx';
+import Numeros from './Numeros.component.jsx';
 import Fotos from './Fotos.component.jsx';
 
 class IndexComponent extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      celular: "313 8812935"
+    };
+  }
+
   render() {
     return (
       <div>
@@ -53,11 +63,11 @@ class IndexComponent extends Component {
                     href: '#FOTOS',
                     name: 'FOTOS'
                   }, {
-                    href: '#DOWNLOAD',
-                    name: 'DOWNLOAD'
+                    href: '#CONTACTO',
+                    name: 'CONTACTO'
                   }, {
-                    href: '#CONTACT',
-                    name: 'CONTACT'
+                    href: 'Login.aspx',
+                    name: 'INICIAR SESIÓN'
                   }, {
                     href: 'Inscripcion.aspx',
                     name: 'INSCRIPCIONES'
@@ -72,7 +82,7 @@ class IndexComponent extends Component {
               <div className="row">
                 <div className="col-md-12">
                   <div className="logo text-center">
-                    <img width="125" height="55" src="assets/images/ejercito/logo.png" alt=""/>
+                    <img width="145" height="150" src="http://www.ejercito.mil.co/_templates/DEFAULT2012/recursos/images/cabezote/banner/Escudo-Ejercito-Nuevo.png" alt=""/>
                   </div>
                 </div>
               </div>
@@ -89,7 +99,7 @@ class IndexComponent extends Component {
                     <div className="download-btn">
 
                       <a className="btn home-btn wow fadeInLeft" href="#PATROCINADORES">PATROCINADORES</a>
-                      <a className="tuor btn wow fadeInRight" href="#INFO">Mas información
+                      <a className="tuor btn wow fadeInRight" href="#CONTACTO">Mas información
                         <i className="fa fa-angle-down"></i>
                       </a>
                     </div>
@@ -97,7 +107,7 @@ class IndexComponent extends Component {
                 </div>
                 <div className="col-md-3 col-md-offset-1 col-sm-4">
                   <div className="home-iphone">
-                    <img src="assets/images/ejercito/portada_decor.jpg" alt=""/>
+                    <img className="mini" src="assets/images/ejercito/portada_decor.jpg"/>
                   </div>
                 </div>
               </div>
@@ -141,7 +151,8 @@ class IndexComponent extends Component {
 
                 <div className="section_title wow fadeIn" data-wow-duration="1s">
                   <h2>Nuestra Alianza</h2>
-                  <p>La Corporación Matamoros y ANASE se unieron para realizar la Carrera por los
+                  <p>
+                    La Corporación Matamoros y ANASE se unieron para realizar la Carrera por los
                     Héroes a nivel nacional para apoyar a los héroes de la patria y sus familias. El
                     objetivo de este evento es entregar una solución de vivienda a las familias, o
                     familiares de los soldados discapacitados o enfermos héroes del Caquetá.
@@ -251,13 +262,21 @@ class IndexComponent extends Component {
         <div className="call_to_action">
           <div className="container">
             <div className="row wow fadeInLeftBig" data-wow-duration="1s">
-              <div className="col-md-9">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et olore magna aliqua. Ut enim ad minim veniam, quis
-                  nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+              <div className="col-md-6">
+                <p>
+                  <h1>Mapa del Recorrido</h1>
+
+                  <br />
+
+                  <strong>
+                    7 Km (competitivo)
+                    <br />
+                    3 Km (recreativo)
+                  </strong>                  
+                </p>
               </div>
               <div className="col-md-3">
-                <a className="btn btn-primary btn-action" href="#" role="button">Download Now</a>
+                <img src="assets/images/ejercito/mapa.jpeg" alt="" />
               </div>
             </div>
           </div>
@@ -372,64 +391,33 @@ class IndexComponent extends Component {
           }
         ]}/>
 
-        <section className="fun_facts parallax">
-          <div className="section_overlay">
-            <div className="container wow bounceInLeft" data-wow-duration="1s">
-              <div className="row text-center">
-                <div className="col-md-3">
-                  <div className="single_fun_facts">
-                    <i className="pe-7s-users"></i>
-                    <h2>
-                      <span className="counter_num">1000</span>
-                      <span>+</span>
-                    </h2>
-                    <p>Participantes</p>
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <div className="single_fun_facts">
-                    <i className="pe-7s-star"></i>
-                    <h2>
-                      <span className="counter_num">7</span>
-                      <span>+</span>
-                    </h2>
-                    <p>Kilometros, competitivo</p>
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <div className="single_fun_facts">
-                    <i className="pe-7s-up-arrow"></i>
-                    <h2>
-                      <span className="counter_num">3</span>
-                      <span>+</span>
-                    </h2>
-                    <p>Kilometros, recreativo</p>
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <div className="single_fun_facts">
-                    <i className="pe-7s-date"></i>
-                    <h2>
-                      <span className="counter_num">6</span>
-                      <span>+</span>
-                    </h2>
-                    <p>Noviembre</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Numeros/>
 
-        <section className="contact page" id="CONTACT">
+        <section className="contact page" id="CONTACTO">
           <div className="section_overlay">
             <div className="container">
               <div className="col-md-10 col-md-offset-1 wow bounceIn">
                 <div className="section_title">
-                  <h2>Participa</h2>
-                  <p>La Carrera de los Héroes, es un evento deportivo organizado por ANASE con en
+                  <h2>Contactanos y Participa</h2>
+                  <p>
+                    La Carrera de los Héroes, es un evento deportivo organizado por ANASE con en
                     respaldo de la Corporación Matamoros con el fin de promover la solidaridad de
-                    los colombianos con los Héroes de la Patria y sus familias</p>
+                    los colombianos con los Héroes de la Patria y sus familias
+                  </p>
+
+                  <p>
+                    <div className="col-md-12">
+                      <div className="single_fun_facts">
+                        <i className="pe-7s-phone"></i>
+                      </div>
+                      <h2>
+                        <span>Llamanos al </span>
+                        <span className="">
+                          <strong>313 881 2935</strong>
+                        </span>
+                      </h2>
+                    </div>
+                  </p>
                 </div>
               </div>
             </div>
@@ -437,34 +425,7 @@ class IndexComponent extends Component {
             <div className="container">
               <div className="row">
                 <div className="col-md-12 wow bounceInLeft">
-                  <div className="social_icons">
-                    <ul>
-                      <li>
-                        <a href="">
-                          <i className="fa fa-facebook"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="">
-                          <i className="fa fa-twitter"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="">
-                          <i className="fa fa-dribbble"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="">
-                          <i className="fa fa-behance"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="">
-                          <i className="fa fa-youtube-play"></i>
-                        </a>
-                      </li>
-                    </ul>
+                  <div className="social_icons">                   
                   </div>
                 </div>
               </div>
@@ -506,7 +467,7 @@ class IndexComponent extends Component {
                         placeholder="Enter Email Address"/>
                     </div>
 
-                    <button type="submit" className="btn btn-default subs-btn">Submit</button>
+                    <button type="submit" className="btn btn-default subs-btn">Enviar</button>
                   </form>
 
                 </div>
@@ -521,8 +482,9 @@ class IndexComponent extends Component {
             <div className="row">
               <div className="col-md-6">
                 <div className="copy_right_text">
-
-                  <p>Copyright &copy; 2016. All Rights Reserved.</p>
+                  <p>
+                    Copyright &copy; 2016. All Rights Reserved.
+                  </p>
                   <p>Ejercito Nacional de
                     <a href="#">
                       Colombia</a>

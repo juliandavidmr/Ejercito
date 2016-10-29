@@ -553,7 +553,7 @@
 // TypeScript
 
   // Especifica la ruta de acceso de carpeta que contiene los archivos lib*.d.ts y tsserver que se van a usar.
-  "typescript.tsdk": null,
+  "typescript.tsdk": "./node_modules/typescript/lib",
 
   // Check if a TypeScript version is available in the workspace
   "typescript.check.workspaceVersion": true,

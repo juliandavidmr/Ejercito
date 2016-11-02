@@ -465,8 +465,8 @@ tuor:visited {
 }
 
 div.carousel-inner .item img {
-    border: 2px solid #f39c12;
-    border-radius: 50%;
+    /*border: 2px solid #f39c12;*/
+    border-radius: 30%;
     padding: 3px;
 }
 

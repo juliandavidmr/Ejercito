@@ -2131,7 +2131,7 @@ webpackJsonp([1],[
 	            title: 'Emerald Energy',
 	            span1: 'Empresa,',
 	            span2: '1996',
-	            image: 'assets/images/patrocinadores/Emerald_Energy_Logo.png',
+	            image: 'http://upload.wikimedia.org/wikipedia/en/8/88/Emerald_Energy_Logo.png',
 	            descr: 'Emerald Energy es una empresa, establecida en 1996 la cual hace parte de la Corporación Sinochem. Desde su constitución se ha dedicado principalmente a la exploración, desarrollo y producción de petróleo. Después de varios años de desarrollo, la empresa ya ha establecido equipos altamente experimentados y profesionales en tecnología y gestión de la exploración de petróleo y producción del mismo.'
 	          }, {
 	            title: 'Azteca Comunicaciones',
@@ -2151,6 +2151,18 @@ webpackJsonp([1],[
 	            span2: '1904',
 	            image: 'assets/images/patrocinadores/Postobon.png',
 	            descr: 'Postobón es una compañía de bebidas Colombiana. Es una de las empresas más grandes del país y una de las principales en América del Sur.'
+	          }, {
+	            title: 'Yo creo en Florencia',
+	            span1: 'Plan de desarrollo,',
+	            span2: '2016',
+	            image: 'https://pbs.twimg.com/profile_images/689076956139261953/HkUaS_hZ.jpg',
+	            descr: ''
+	          }, {
+	            title: 'Yo creo en Florencia',
+	            span1: 'Plan de desarrollo,',
+	            span2: '2016',
+	            image: 'https://pbs.twimg.com/profile_images/689076956139261953/HkUaS_hZ.jpg',
+	            descr: ''
 	          }] }),
 	        _react2.default.createElement(
 	          'section',

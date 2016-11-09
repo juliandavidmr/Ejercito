@@ -2157,12 +2157,6 @@ webpackJsonp([1],[
 	            span2: '2016',
 	            image: 'https://pbs.twimg.com/profile_images/689076956139261953/HkUaS_hZ.jpg',
 	            descr: ''
-	          }, {
-	            title: 'Yo creo en Florencia',
-	            span1: 'Plan de desarrollo,',
-	            span2: '2016',
-	            image: 'https://pbs.twimg.com/profile_images/689076956139261953/HkUaS_hZ.jpg',
-	            descr: ''
 	          }] }),
 	        _react2.default.createElement(
 	          'section',

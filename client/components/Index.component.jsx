@@ -16,6 +16,20 @@ class IndexComponent extends Component {
   }
 
   render() {
+
+    const divStyle = {
+      borderRadius: "81px 26px 76px 27px",
+      border: "0 px solid #000000",
+      width: "303 px",
+      height: "118 px",
+      backgroundColor: "#080808",
+      color: "azure",
+      fontSize: "medium",
+      "padding-top": "20 px",
+      paddingLeft: "30 px",
+      paddingRight: "34 px"
+    };
+
     return (
       <div>
         <div className="spn_hol">
@@ -79,10 +93,19 @@ class IndexComponent extends Component {
             </nav>
 
             <div className="container home-container">
+
               <div className="row">
+                <div style={divStyle}>
+                  Agradecemos a los participantes que con su gran aporte hicieron que esta carrera
+                  llegara a un feliz termino
+                </div>
                 <div className="col-md-12">
                   <div className="logo text-center">
-                    <img width="145" height="150" src="http://www.ejercito.mil.co/_templates/DEFAULT2012/recursos/images/cabezote/banner/Escudo-Ejercito-Nuevo.png" alt=""/>
+                    <img
+                      width="145"
+                      height="150"
+                      src="http://www.ejercito.mil.co/_templates/DEFAULT2012/recursos/images/cabezote/banner/Escudo-Ejercito-Nuevo.png"
+                      alt=""/>
                   </div>
                 </div>
               </div>
@@ -141,12 +164,6 @@ class IndexComponent extends Component {
             span2: '1904',
             image: 'assets/images/patrocinadores/Postobon.png',
             descr: 'Postobón es una compañía de bebidas Colombiana. Es una de las empresas más grandes del país y una de las principales en América del Sur.'
-          }, {
-            title: 'Yo creo en Florencia',
-            span1: 'Plan de desarrollo,',
-            span2: '2016',
-            image: 'https://pbs.twimg.com/profile_images/689076956139261953/HkUaS_hZ.jpg',
-            descr: ''
           }, {
             title: 'Yo creo en Florencia',
             span1: 'Plan de desarrollo,',
@@ -278,17 +295,17 @@ class IndexComponent extends Component {
                 <p>
                   <h1>Mapa del Recorrido</h1>
 
-                  <br />
+                  <br/>
 
                   <strong>
                     7 Km (competitivo)
-                    <br />
+                    <br/>
                     3 Km (recreativo)
-                  </strong>                  
+                  </strong>
                 </p>
               </div>
               <div className="col-md-3">
-                <img src="assets/images/ejercito/mapa.jpeg" alt="" />
+                <img src="assets/images/ejercito/mapa.jpeg" alt=""/>
               </div>
             </div>
           </div>
@@ -423,7 +440,8 @@ class IndexComponent extends Component {
                         <i className="pe-7s-phone"></i>
                       </div>
                       <h2>
-                        <span>Llamanos al </span>
+                        <span>Llamanos al
+                        </span>
                         <span className="">
                           <strong>313 881 2935</strong>
                         </span>
@@ -437,8 +455,7 @@ class IndexComponent extends Component {
             <div className="container">
               <div className="row">
                 <div className="col-md-12 wow bounceInLeft">
-                  <div className="social_icons">                   
-                  </div>
+                  <div className="social_icons"></div>
                 </div>
               </div>
             </div>

@@ -24,6 +24,20 @@ URL: http://designscrazed.org/
 
 */
 
+.cuadro1 {
+    border-radius: 81px 26px 76px 27px;
+    -moz-border-radius: 118px 26px 147px 27px;
+    border: 0 px solid #000000;
+    width: 303 px;
+    height: 118 px;
+    background-color: #080808;
+    color: azure;
+    font-size: medium;
+    padding-top: 20 px;
+    padding-left: 30 px;
+    padding-right: 34 px;
+}
+
 * {
     margin: 0;
     padding: 0;

@@ -16,20 +16,6 @@ class IndexComponent extends Component {
   }
 
   render() {
-
-    const divStyle = {
-      borderRadius: "81px 26px 76px 27px",
-      border: "0 px solid #000000",
-      width: "303 px",
-      height: "118 px",
-      backgroundColor: "#080808",
-      color: "azure",
-      fontSize: "medium",
-      "padding-top": "20 px",
-      paddingLeft: "30 px",
-      paddingRight: "34 px"
-    };
-
     return (
       <div>
         <div className="spn_hol">
@@ -45,6 +31,13 @@ class IndexComponent extends Component {
           <div className="section_overlay">
             <nav className="navbar navbar-default navbar-fixed-top" role="navigation">
               <div className="container">
+                <button
+                  type="button"
+                  className="btn btn-primary"
+                  data-toggle="modal"
+                  data-target=".bd-example-modal-sm">
+                  abrir
+                </button>
 
                 <div className="navbar-header">
                   <button
@@ -93,12 +86,9 @@ class IndexComponent extends Component {
             </nav>
 
             <div className="container home-container">
-
+      
               <div className="row">
-                <div style={divStyle}>
-                  Agradecemos a los participantes que con su gran aporte hicieron que esta carrera
-                  llegara a un feliz termino
-                </div>
+
                 <div className="col-md-12">
                   <div className="logo text-center">
                     <img

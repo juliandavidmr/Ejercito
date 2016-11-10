@@ -1,3 +1,8 @@
+$(window).load(function(){
+    $('#myModal').modal('show');
+});
+
+
 //LOADER/SPINNER
 $(window)
     .bind("load", function () {

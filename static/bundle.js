@@ -2001,7 +2001,6 @@ webpackJsonp([1],[
 	        _react2.default.createElement(
 	          'section',
 	          { className: 'header parallax home-parallax page', id: 'HOME' },
-	          _react2.default.createElement('h2', null),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'section_overlay' },
@@ -2073,7 +2072,11 @@ webpackJsonp([1],[
 	                  _react2.default.createElement(
 	                    'div',
 	                    { className: 'logo text-center' },
-	                    _react2.default.createElement('img', { width: '145', height: '150', src: 'http://www.ejercito.mil.co/_templates/DEFAULT2012/recursos/images/cabezote/banner/Escudo-Ejercito-Nuevo.png', alt: '' })
+	                    _react2.default.createElement('img', {
+	                      width: '145',
+	                      height: '150',
+	                      src: 'http://www.ejercito.mil.co/_templates/DEFAULT2012/recursos/images/cabezote/banner/Escudo-Ejercito-Nuevo.png',
+	                      alt: '' })
 	                  )
 	                )
 	              ),
@@ -2558,7 +2561,7 @@ webpackJsonp([1],[
 	                        _react2.default.createElement(
 	                          'span',
 	                          null,
-	                          'Llamanos al '
+	                          'Llamanos al'
 	                        ),
 	                        _react2.default.createElement(
 	                          'span',

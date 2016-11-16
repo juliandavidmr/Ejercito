@@ -8,32 +8,23 @@
 	<title>Carrera de los Héroes 7K</title>
 	<!-- Google Font -->
 	<link href='https://fonts.googleapis.com/css?family=Raleway:500,600,700,800,900,400,300' rel='stylesheet' type='text/css'>
-
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic' rel='stylesheet'
-		type='text/css'>
+			type='text/css'>
 	<!-- Bootstrap -->
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
 	<!-- Owl Carousel Assets -->
 	<link href="assets/css/owl.carousel.css" rel="stylesheet">
 	<link href="assets/css/owl.theme.css" rel="stylesheet">
-
 	<!-- Pixeden Icon Font -->
 	<link rel="stylesheet" href="assets/css/Pe-icon-7-stroke.css">
-
 	<!-- Font Awesome -->
 	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
-
-
 	<!-- PrettyPhoto -->
 	<link href="assets/css/prettyPhoto.css" rel="stylesheet">
-
 	<!-- Favicon -->
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-
 	<!-- Style -->
 	<link href="assets/css/style.css" rel="stylesheet">
-
 	<link href="assets/css/animate.css" rel="stylesheet">
 	<!-- Responsive CSS -->
 	<link href="assets/css/responsive.css" rel="stylesheet">
@@ -42,9 +33,6 @@
 	<!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
-
-	<!--[if lt IE 9]>
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-sham.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/json3/3.3.2/json3.min.js"></script>
@@ -55,11 +43,38 @@
 </head>
 
 <body>
+	<!-- Modal -->
+	<div class="modal fade" id="memberModal" tabindex="-1" role="dialog" aria-labelledby="memberModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h3 class="modal-title" id="memberModalLabel">GRACIAS!</h3>
+				</div>
+				<div class="modal-body">
+					<p>
+						<h4>
+							Agradecemos a los participantes que con su gran aporte hicieron que esta carrera llegara a un feliz termino
+						</h4>						
+
+						<br />
+						<br />
+						<br />
+
+						<a type="button" class="btn btn-primary btn-lg btn-block" href="http://www.finalap.com/app/#evento/469/track/927/racer/1149334">Ver mi tiempo en la carrera</a>	
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div id="root"></div>
 
 	<script src="./vendor.bundle.js"></script>
 	<script src="./bundle.js"></script>
-
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/owl.carousel.js"></script>
@@ -74,6 +89,10 @@
 	<script src="assets/js/jquery.counterup.min.js"></script>
 	<script src="assets/js/script.js"></script>
 
+	<script type="text/javascript">
+			$('#memberModal').modal('show');
+			console.log(">Listo");
+	</script>
 </body>
 
 </html>

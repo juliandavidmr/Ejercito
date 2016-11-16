@@ -27,17 +27,9 @@ class IndexComponent extends Component {
         </div>
 
         <section className="header parallax home-parallax page" id="HOME">
-          <h2></h2>
           <div className="section_overlay">
             <nav className="navbar navbar-default navbar-fixed-top" role="navigation">
               <div className="container">
-                <button
-                  type="button"
-                  className="btn btn-primary"
-                  data-toggle="modal"
-                  data-target=".bd-example-modal-sm">
-                  abrir
-                </button>
 
                 <div className="navbar-header">
                   <button
@@ -110,7 +102,6 @@ class IndexComponent extends Component {
                     </p>
 
                     <div className="download-btn">
-
                       <a className="btn home-btn wow fadeInLeft" href="#PATROCINADORES">PATROCINADORES</a>
                       <a className="tuor btn wow fadeInRight" href="#CONTACTO">Mas información
                         <i className="fa fa-angle-down"></i>
